@@ -13,6 +13,5 @@ Route::group([
 ], function (Router $router) {
 
     $router->get('/', 'HomeController@index');
-    $router->resource('/adminUser', 'AdminUserController');//商户管理
-    $router->resource('/server', 'MsController');//码商管理
+
 });

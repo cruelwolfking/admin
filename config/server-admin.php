@@ -48,9 +48,9 @@ return [
     */
     'route' => [
 
-        'prefix' => env('ADMIN_ROUTE_PREFIX', 'admin'),
+        'prefix' => 'server-admin',
 
-        'namespace' => 'App\\Admin\\Controllers',
+        'namespace' => 'App\\ServerAdmin\\Controllers',
 
         'middleware' => ['web', 'admin'],
     ],
@@ -65,7 +65,7 @@ return [
     | be set before running `artisan admin::install` to take effect.
     |
     */
-    'directory' => app_path('Admin'),
+    'directory' => app_path('ServerAdmin'),
 
     /*
     |--------------------------------------------------------------------------
@@ -109,7 +109,7 @@ return [
     'auth' => [
         'enable' => true,
 
-        'controller' => App\Admin\Controllers\AuthController::class,
+        'controller' => App\ServerAdmin\Controllers\AuthController::class,
 
         'guard' => 'admin',
 
@@ -346,16 +346,6 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Extension Directory
-    |--------------------------------------------------------------------------
-    |
-    | When you use command `php artisan admin:extend` to generate extensions,
-    | the extension files will be generated in this directory.
-    */
-    'extension_dir' => app_path('Admin/Extensions'),
-
-    /*
-    |--------------------------------------------------------------------------
     | Settings for extensions.
     |--------------------------------------------------------------------------
     |
@@ -366,11 +356,4 @@ return [
     'extensions' => [
 
     ],
-    'multi_app' => [
-        // 与新应用的配置文件名称一致
-        // 设置为true启用，false则是停用
-        'merchant-admin' => true,
-        'server-admin' => true,
-    ],
-
 ];

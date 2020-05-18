@@ -15,7 +15,8 @@ return [
         'rate' => '费率',
         'join_type' => '合作方式',
         'expire_time' => '过期时间',
-        'status'=>'状态'
+        'status'=>'状态',
+        'type'=>'身份类型'
     ],
     'options' => [
     ],
