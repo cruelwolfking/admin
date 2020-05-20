@@ -15,4 +15,6 @@ Route::group([
     $router->get('/', 'HomeController@index');
     $router->resource('/adminUser', 'AdminUserController');//商户管理
     $router->resource('/server', 'MsController');//码商管理
+    $router->resource('/plats', 'PlatController');//接入平台管理
+
 });
