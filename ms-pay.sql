@@ -11,7 +11,7 @@
  Target Server Version : 50728
  File Encoding         : 65001
 
- Date: 20/05/2020 01:24:48
+ Date: 21/05/2020 03:28:07
 */
 
 SET NAMES utf8mb4;
@@ -100,7 +100,7 @@ CREATE TABLE `admin_operation_log` (
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `admin_operation_log_user_id_index` (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=529 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1161 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- ----------------------------
 -- Records of admin_operation_log
@@ -634,6 +634,638 @@ INSERT INTO `admin_operation_log` VALUES (525, 1, 'admin/auth/menu', 'GET', '127
 INSERT INTO `admin_operation_log` VALUES (526, 1, 'admin/auth/menu/14/edit', 'GET', '127.0.0.1', '{\"_dialog_form_\":\"1\"}', '2020-05-20 01:23:35', '2020-05-20 01:23:35');
 INSERT INTO `admin_operation_log` VALUES (527, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 01:23:47', '2020-05-20 01:23:47');
 INSERT INTO `admin_operation_log` VALUES (528, 1, 'admin/auth/permissions/create', 'GET', '127.0.0.1', '{\"_dialog_form_\":\"1\"}', '2020-05-20 01:23:49', '2020-05-20 01:23:49');
+INSERT INTO `admin_operation_log` VALUES (529, 0, 'admin/auth/login', 'GET', '127.0.0.1', '[]', '2020-05-20 20:33:53', '2020-05-20 20:33:53');
+INSERT INTO `admin_operation_log` VALUES (530, 0, 'admin/auth/login', 'POST', '127.0.0.1', '{\"_token\":\"xEXSI8Uozyw01YcMoQEV5sLxwhXv84wAXTDOOe1b\",\"username\":\"admin\",\"password\":\"adm******\"}', '2020-05-20 20:33:56', '2020-05-20 20:33:56');
+INSERT INTO `admin_operation_log` VALUES (531, 1, 'admin', 'GET', '127.0.0.1', '[]', '2020-05-20 20:33:56', '2020-05-20 20:33:56');
+INSERT INTO `admin_operation_log` VALUES (532, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 20:34:00', '2020-05-20 20:34:00');
+INSERT INTO `admin_operation_log` VALUES (533, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 20:34:01', '2020-05-20 20:34:01');
+INSERT INTO `admin_operation_log` VALUES (534, 1, 'admin/auth/menu/19/edit', 'GET', '127.0.0.1', '{\"_dialog_form_\":\"1\"}', '2020-05-20 20:34:08', '2020-05-20 20:34:08');
+INSERT INTO `admin_operation_log` VALUES (535, 1, 'admin/auth/roles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 20:34:19', '2020-05-20 20:34:19');
+INSERT INTO `admin_operation_log` VALUES (536, 1, 'admin/auth/roles/1/edit', 'GET', '127.0.0.1', '{\"_dialog_form_\":\"1\"}', '2020-05-20 20:34:23', '2020-05-20 20:34:23');
+INSERT INTO `admin_operation_log` VALUES (537, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 20:34:35', '2020-05-20 20:34:35');
+INSERT INTO `admin_operation_log` VALUES (538, 1, 'admin/auth/permissions/create', 'GET', '127.0.0.1', '{\"_dialog_form_\":\"1\"}', '2020-05-20 20:34:40', '2020-05-20 20:34:40');
+INSERT INTO `admin_operation_log` VALUES (539, 1, 'admin/auth/permissions', 'POST', '127.0.0.1', '{\"_token\":\"RpWtpT6dB3VqOcs17uc7fXDGiFLpPIismrksf97O\",\"parent_id\":null,\"slug\":\"merchant\",\"name\":\"\\u5546\\u6237\\u7ba1\\u7406\",\"http_method\":[null],\"http_path\":[null],\"_previous_\":\"http:\\/\\/127.0.0.1:8000\\/admin\\/auth\\/permissions\"}', '2020-05-20 20:36:10', '2020-05-20 20:36:10');
+INSERT INTO `admin_operation_log` VALUES (540, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 20:36:10', '2020-05-20 20:36:10');
+INSERT INTO `admin_operation_log` VALUES (541, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 20:36:10', '2020-05-20 20:36:10');
+INSERT INTO `admin_operation_log` VALUES (542, 1, 'admin/auth/permissions/7/edit', 'GET', '127.0.0.1', '{\"_dialog_form_\":\"1\"}', '2020-05-20 20:36:14', '2020-05-20 20:36:14');
+INSERT INTO `admin_operation_log` VALUES (543, 1, 'admin/auth/permissions/7', 'PUT', '127.0.0.1', '{\"_token\":\"RpWtpT6dB3VqOcs17uc7fXDGiFLpPIismrksf97O\",\"parent_id\":null,\"slug\":\"merchant\",\"name\":\"\\u5546\\u6237\\u7ba1\\u7406\",\"http_method\":[null],\"http_path\":[\"\\/adminUser\",\"\\/adminUser\\/create\",\"\\/adminUser\\/*\",\"\\/adminUser\\/*\\/edit\",null],\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/127.0.0.1:8000\\/admin\\/auth\\/permissions\"}', '2020-05-20 20:36:57', '2020-05-20 20:36:57');
+INSERT INTO `admin_operation_log` VALUES (544, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 20:36:57', '2020-05-20 20:36:57');
+INSERT INTO `admin_operation_log` VALUES (545, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 20:36:57', '2020-05-20 20:36:57');
+INSERT INTO `admin_operation_log` VALUES (546, 1, 'admin/adminUser', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 20:37:03', '2020-05-20 20:37:03');
+INSERT INTO `admin_operation_log` VALUES (547, 1, 'admin/adminUser', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 20:37:05', '2020-05-20 20:37:05');
+INSERT INTO `admin_operation_log` VALUES (548, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 20:37:06', '2020-05-20 20:37:06');
+INSERT INTO `admin_operation_log` VALUES (549, 1, 'admin/auth/permissions/create', 'GET', '127.0.0.1', '{\"_dialog_form_\":\"1\"}', '2020-05-20 20:37:08', '2020-05-20 20:37:08');
+INSERT INTO `admin_operation_log` VALUES (550, 1, 'admin/auth/permissions', 'POST', '127.0.0.1', '{\"_token\":\"RpWtpT6dB3VqOcs17uc7fXDGiFLpPIismrksf97O\",\"parent_id\":null,\"slug\":\"server-manage\",\"name\":\"\\u7801\\u5546\\u7ba1\\u7406\",\"http_method\":[null],\"http_path\":[\"\\/server\",\"\\/server\\/create\",\"\\/server\\/*\",\"\\/server\\/*\\/edit\",null],\"_previous_\":\"http:\\/\\/127.0.0.1:8000\\/admin\\/auth\\/permissions\"}', '2020-05-20 20:37:33', '2020-05-20 20:37:33');
+INSERT INTO `admin_operation_log` VALUES (551, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 20:37:33', '2020-05-20 20:37:33');
+INSERT INTO `admin_operation_log` VALUES (552, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 20:37:33', '2020-05-20 20:37:33');
+INSERT INTO `admin_operation_log` VALUES (553, 1, 'admin/helpers/scaffold', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 21:55:03', '2020-05-20 21:55:03');
+INSERT INTO `admin_operation_log` VALUES (554, 1, 'admin/helpers/scaffold/table', 'POST', '127.0.0.1', '{\"db\":\"ms-pay\",\"tb\":\"plats\",\"_token\":\"RpWtpT6dB3VqOcs17uc7fXDGiFLpPIismrksf97O\"}', '2020-05-20 21:55:06', '2020-05-20 21:55:06');
+INSERT INTO `admin_operation_log` VALUES (555, 1, 'admin/helpers/scaffold', 'GET', '127.0.0.1', '{\"singular\":\"plats\"}', '2020-05-20 21:55:06', '2020-05-20 21:55:06');
+INSERT INTO `admin_operation_log` VALUES (556, 1, 'admin/helpers/scaffold', 'POST', '127.0.0.1', '{\"table_name\":\"plats\",\"exist-table\":\"ms-pay|plats\",\"model_name\":\"App\\\\Models\\\\Plat\",\"controller_name\":\"App\\\\Admin\\\\Controllers\\\\PlatController\",\"create\":[\"model\",\"repository\",\"controller\",\"lang\"],\"fields\":[{\"name\":\"name\",\"translation\":\"\\u5e73\\u53f0\\u540d\\u79f0\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":\"\\u5e73\\u53f0\\u540d\\u79f0\"},{\"name\":\"extra_json\",\"translation\":\"\\u767b\\u5f55\\u53c2\\u6570\",\"type\":\"text\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":\"\\u767b\\u5f55\\u53c2\\u6570\"},{\"name\":\"status\",\"translation\":\"\\u662f\\u5426\\u542f\\u7528\",\"type\":\"integer\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":\"\\u662f\\u5426\\u542f\\u7528\"}],\"primary_key\":\"id\",\"timestamps\":\"1\",\"_token\":\"RpWtpT6dB3VqOcs17uc7fXDGiFLpPIismrksf97O\"}', '2020-05-20 21:55:14', '2020-05-20 21:55:14');
+INSERT INTO `admin_operation_log` VALUES (557, 1, 'admin/helpers/scaffold', 'GET', '127.0.0.1', '[]', '2020-05-20 21:55:14', '2020-05-20 21:55:14');
+INSERT INTO `admin_operation_log` VALUES (558, 1, 'admin/helpers/scaffold', 'GET', '127.0.0.1', '[]', '2020-05-20 21:56:02', '2020-05-20 21:56:02');
+INSERT INTO `admin_operation_log` VALUES (559, 1, 'admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 21:56:10', '2020-05-20 21:56:10');
+INSERT INTO `admin_operation_log` VALUES (560, 1, 'admin/merchant-plats/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 21:56:12', '2020-05-20 21:56:12');
+INSERT INTO `admin_operation_log` VALUES (561, 1, 'admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 21:58:39', '2020-05-20 21:58:39');
+INSERT INTO `admin_operation_log` VALUES (562, 1, 'admin/merchant-plats/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 21:58:41', '2020-05-20 21:58:41');
+INSERT INTO `admin_operation_log` VALUES (563, 1, 'admin/merchant-plats', 'POST', '127.0.0.1', '{\"name\":\"\\u5927\\u53d1\",\"extra_json\":{\"new_1\":{\"key\":\"api_url\",\"value\":null,\"desc\":\"\\u5927\\u53d1\\u63a5\\u53e3\\u5730\\u5740\",\"_remove_\":\"0\"},\"new_2\":{\"key\":\"dafa_id\",\"value\":null,\"desc\":\"\\u5927\\u53d1ID\",\"_remove_\":\"0\"},\"new_3\":{\"key\":\"dafa_secret\",\"value\":null,\"desc\":\"\\u5927\\u53d1\\u5bc6\\u94a5\",\"_remove_\":\"0\"}},\"status\":\"1\",\"_token\":\"RpWtpT6dB3VqOcs17uc7fXDGiFLpPIismrksf97O\",\"_previous_\":\"http:\\/\\/127.0.0.1:8000\\/admin\\/merchant-plats\"}', '2020-05-20 21:59:40', '2020-05-20 21:59:40');
+INSERT INTO `admin_operation_log` VALUES (564, 1, 'admin/merchant-plats', 'POST', '127.0.0.1', '{\"name\":\"\\u5927\\u53d1\",\"extra_json\":{\"new_1\":{\"key\":\"api_url\",\"value\":null,\"desc\":\"\\u5927\\u53d1\\u63a5\\u53e3\\u5730\\u5740\",\"_remove_\":\"0\"},\"new_2\":{\"key\":\"dafa_id\",\"value\":null,\"desc\":\"\\u5927\\u53d1ID\",\"_remove_\":\"0\"},\"new_3\":{\"key\":\"dafa_secret\",\"value\":null,\"desc\":\"\\u5927\\u53d1\\u5bc6\\u94a5\",\"_remove_\":\"0\"}},\"status\":\"1\",\"_token\":\"RpWtpT6dB3VqOcs17uc7fXDGiFLpPIismrksf97O\",\"_previous_\":\"http:\\/\\/127.0.0.1:8000\\/admin\\/merchant-plats\"}', '2020-05-20 22:00:16', '2020-05-20 22:00:16');
+INSERT INTO `admin_operation_log` VALUES (565, 1, 'admin/merchant-plats', 'POST', '127.0.0.1', '{\"name\":\"\\u5927\\u53d1\",\"extra_json\":{\"new_1\":{\"key\":\"api_url\",\"value\":null,\"desc\":\"\\u5927\\u53d1\\u63a5\\u53e3\\u5730\\u5740\",\"_remove_\":\"0\"},\"new_2\":{\"key\":\"dafa_id\",\"value\":null,\"desc\":\"\\u5927\\u53d1ID\",\"_remove_\":\"0\"},\"new_3\":{\"key\":\"dafa_secret\",\"value\":null,\"desc\":\"\\u5927\\u53d1\\u5bc6\\u94a5\",\"_remove_\":\"0\"}},\"status\":\"1\",\"_token\":\"RpWtpT6dB3VqOcs17uc7fXDGiFLpPIismrksf97O\",\"_previous_\":\"http:\\/\\/127.0.0.1:8000\\/admin\\/merchant-plats\"}', '2020-05-20 22:00:48', '2020-05-20 22:00:48');
+INSERT INTO `admin_operation_log` VALUES (566, 1, 'admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:00:48', '2020-05-20 22:00:48');
+INSERT INTO `admin_operation_log` VALUES (567, 1, 'admin/merchant-plats/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:01:03', '2020-05-20 22:01:03');
+INSERT INTO `admin_operation_log` VALUES (568, 1, 'admin/merchant-plats', 'POST', '127.0.0.1', '{\"name\":\"\\u4e2d\\u535a\",\"extra_json\":{\"new_1\":{\"key\":\"admin_url\",\"value\":null,\"desc\":\"\\u540e\\u53f0\\u767b\\u5f55\\u57df\\u540d\",\"_remove_\":\"0\"},\"new_2\":{\"key\":\"username\",\"value\":null,\"desc\":\"\\u673a\\u5668\\u4eba\\u8d26\\u6237\",\"_remove_\":\"0\"},\"new_3\":{\"key\":\"password\",\"value\":null,\"desc\":\"\\u673a\\u5668\\u4eba\\u5bc6\\u7801\",\"_remove_\":\"0\"}},\"status\":\"1\",\"_token\":\"RpWtpT6dB3VqOcs17uc7fXDGiFLpPIismrksf97O\",\"_previous_\":\"http:\\/\\/127.0.0.1:8000\\/admin\\/merchant-plats\"}', '2020-05-20 22:01:42', '2020-05-20 22:01:42');
+INSERT INTO `admin_operation_log` VALUES (569, 1, 'admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:01:42', '2020-05-20 22:01:42');
+INSERT INTO `admin_operation_log` VALUES (570, 1, 'admin/merchant-plats/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:01:48', '2020-05-20 22:01:48');
+INSERT INTO `admin_operation_log` VALUES (571, 1, 'admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:01:55', '2020-05-20 22:01:55');
+INSERT INTO `admin_operation_log` VALUES (572, 1, 'admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-20 22:01:59', '2020-05-20 22:01:59');
+INSERT INTO `admin_operation_log` VALUES (573, 1, 'admin/adminUser', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:02:01', '2020-05-20 22:02:01');
+INSERT INTO `admin_operation_log` VALUES (574, 1, 'admin/server', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:02:02', '2020-05-20 22:02:02');
+INSERT INTO `admin_operation_log` VALUES (575, 1, 'admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:02:03', '2020-05-20 22:02:03');
+INSERT INTO `admin_operation_log` VALUES (576, 1, 'admin/plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:02:25', '2020-05-20 22:02:25');
+INSERT INTO `admin_operation_log` VALUES (577, 1, 'admin/adminUser', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:02:40', '2020-05-20 22:02:40');
+INSERT INTO `admin_operation_log` VALUES (578, 1, 'admin/adminUser/2/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:02:46', '2020-05-20 22:02:46');
+INSERT INTO `admin_operation_log` VALUES (579, 1, 'admin/adminUser', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:02:50', '2020-05-20 22:02:50');
+INSERT INTO `admin_operation_log` VALUES (580, 1, 'admin/server', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:02:54', '2020-05-20 22:02:54');
+INSERT INTO `admin_operation_log` VALUES (581, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:03:27', '2020-05-20 22:03:27');
+INSERT INTO `admin_operation_log` VALUES (582, 1, 'admin/auth/permissions/create', 'GET', '127.0.0.1', '{\"_dialog_form_\":\"1\"}', '2020-05-20 22:03:30', '2020-05-20 22:03:30');
+INSERT INTO `admin_operation_log` VALUES (583, 1, 'admin/auth/permissions', 'POST', '127.0.0.1', '{\"_token\":\"RpWtpT6dB3VqOcs17uc7fXDGiFLpPIismrksf97O\",\"parent_id\":null,\"slug\":\"plats\",\"name\":\"\\u63a5\\u5165\\u5e73\\u53f0\\u7ba1\\u7406\",\"http_method\":[null],\"http_path\":[\"\\/plats\",\"\\/plats\\/create\",\"\\/plats\\/*\",\"\\/plats\\/*\\/edit\",null],\"_previous_\":\"http:\\/\\/127.0.0.1:8000\\/admin\\/auth\\/permissions\"}', '2020-05-20 22:03:52', '2020-05-20 22:03:52');
+INSERT INTO `admin_operation_log` VALUES (584, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:03:52', '2020-05-20 22:03:52');
+INSERT INTO `admin_operation_log` VALUES (585, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:03:52', '2020-05-20 22:03:52');
+INSERT INTO `admin_operation_log` VALUES (586, 1, 'admin/auth/roles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:03:53', '2020-05-20 22:03:53');
+INSERT INTO `admin_operation_log` VALUES (587, 1, 'admin/auth/roles/1/edit', 'GET', '127.0.0.1', '{\"_dialog_form_\":\"1\"}', '2020-05-20 22:03:58', '2020-05-20 22:03:58');
+INSERT INTO `admin_operation_log` VALUES (588, 1, 'admin/auth/roles/1', 'PUT', '127.0.0.1', '{\"_token\":\"RpWtpT6dB3VqOcs17uc7fXDGiFLpPIismrksf97O\",\"slug\":\"administrator\",\"name\":\"\\u5e73\\u53f0\\u7ba1\\u7406\",\"permissions\":\"2,3,4,5,6,7,8,9\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/127.0.0.1:8000\\/admin\\/auth\\/roles\"}', '2020-05-20 22:04:02', '2020-05-20 22:04:02');
+INSERT INTO `admin_operation_log` VALUES (589, 1, 'admin/auth/roles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:04:02', '2020-05-20 22:04:02');
+INSERT INTO `admin_operation_log` VALUES (590, 1, 'admin/auth/roles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:04:02', '2020-05-20 22:04:02');
+INSERT INTO `admin_operation_log` VALUES (591, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:04:04', '2020-05-20 22:04:04');
+INSERT INTO `admin_operation_log` VALUES (592, 1, 'admin/auth/menu/19/edit', 'GET', '127.0.0.1', '{\"_dialog_form_\":\"1\"}', '2020-05-20 22:04:08', '2020-05-20 22:04:08');
+INSERT INTO `admin_operation_log` VALUES (593, 1, 'admin/auth/menu/19', 'PUT', '127.0.0.1', '{\"_token\":\"RpWtpT6dB3VqOcs17uc7fXDGiFLpPIismrksf97O\",\"parent_id\":\"0\",\"title\":\"\\u5e73\\u53f0\\u5217\\u8868\",\"icon\":\"fa-server\",\"uri\":\"plats\",\"roles\":[\"1\",null],\"permissions\":\"9\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/127.0.0.1:8000\\/admin\\/auth\\/menu\"}', '2020-05-20 22:04:18', '2020-05-20 22:04:18');
+INSERT INTO `admin_operation_log` VALUES (594, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:04:18', '2020-05-20 22:04:18');
+INSERT INTO `admin_operation_log` VALUES (595, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:04:19', '2020-05-20 22:04:19');
+INSERT INTO `admin_operation_log` VALUES (596, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '[]', '2020-05-20 22:04:22', '2020-05-20 22:04:22');
+INSERT INTO `admin_operation_log` VALUES (597, 1, 'admin', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:04:29', '2020-05-20 22:04:29');
+INSERT INTO `admin_operation_log` VALUES (598, 1, 'admin/auth/roles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:04:41', '2020-05-20 22:04:41');
+INSERT INTO `admin_operation_log` VALUES (599, 0, 'admin/auth/login', 'GET', '127.0.0.1', '[]', '2020-05-20 22:04:56', '2020-05-20 22:04:56');
+INSERT INTO `admin_operation_log` VALUES (600, 0, 'merchant-admin/auth/login', 'GET', '127.0.0.1', '[]', '2020-05-20 22:05:04', '2020-05-20 22:05:04');
+INSERT INTO `admin_operation_log` VALUES (601, 0, 'merchant-admin/auth/login', 'POST', '127.0.0.1', '{\"_token\":\"WKFMhkadwVpW7YQOhSJMhLQeUjReQkPlMj3sUgiY\",\"username\":\"merchant\",\"password\":\"123******\"}', '2020-05-20 22:05:09', '2020-05-20 22:05:09');
+INSERT INTO `admin_operation_log` VALUES (602, 2, 'merchant-admin', 'GET', '127.0.0.1', '[]', '2020-05-20 22:05:09', '2020-05-20 22:05:09');
+INSERT INTO `admin_operation_log` VALUES (603, 2, 'merchant-admin/dcat-api/value', 'POST', '127.0.0.1', '{\"_token\":\"Ole8FNgdJvnobXaY75xTMStyEQfk557wT89B8yLR\",\"_key\":\"App\\\\MerchantAdmin\\\\Metrics\\\\Examples\\\\Tickets\"}', '2020-05-20 22:05:09', '2020-05-20 22:05:09');
+INSERT INTO `admin_operation_log` VALUES (604, 2, 'merchant-admin/dcat-api/value', 'POST', '127.0.0.1', '{\"_token\":\"Ole8FNgdJvnobXaY75xTMStyEQfk557wT89B8yLR\",\"_key\":\"App\\\\MerchantAdmin\\\\Metrics\\\\Examples\\\\NewUsers\"}', '2020-05-20 22:05:09', '2020-05-20 22:05:09');
+INSERT INTO `admin_operation_log` VALUES (605, 2, 'merchant-admin/dcat-api/value', 'POST', '127.0.0.1', '{\"_token\":\"Ole8FNgdJvnobXaY75xTMStyEQfk557wT89B8yLR\",\"_key\":\"App\\\\MerchantAdmin\\\\Metrics\\\\Examples\\\\Sessions\"}', '2020-05-20 22:05:09', '2020-05-20 22:05:09');
+INSERT INTO `admin_operation_log` VALUES (606, 2, 'merchant-admin/dcat-api/value', 'POST', '127.0.0.1', '{\"_token\":\"Ole8FNgdJvnobXaY75xTMStyEQfk557wT89B8yLR\",\"_key\":\"App\\\\MerchantAdmin\\\\Metrics\\\\Examples\\\\ProductOrders\"}', '2020-05-20 22:05:09', '2020-05-20 22:05:09');
+INSERT INTO `admin_operation_log` VALUES (607, 2, 'merchant-admin/helpers/scaffold', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:05:15', '2020-05-20 22:05:15');
+INSERT INTO `admin_operation_log` VALUES (608, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:05:23', '2020-05-20 22:05:23');
+INSERT INTO `admin_operation_log` VALUES (609, 2, 'merchant-admin/helpers/scaffold', 'GET', '127.0.0.1', '[]', '2020-05-20 22:05:39', '2020-05-20 22:05:39');
+INSERT INTO `admin_operation_log` VALUES (610, 1, 'admin/helpers/scaffold', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:05:55', '2020-05-20 22:05:55');
+INSERT INTO `admin_operation_log` VALUES (611, 1, 'admin/helpers/scaffold/table', 'POST', '127.0.0.1', '{\"db\":\"ms-pay\",\"tb\":\"merchant_plats\",\"_token\":\"RpWtpT6dB3VqOcs17uc7fXDGiFLpPIismrksf97O\"}', '2020-05-20 22:06:00', '2020-05-20 22:06:00');
+INSERT INTO `admin_operation_log` VALUES (612, 1, 'admin/helpers/scaffold', 'GET', '127.0.0.1', '{\"singular\":\"merchant_plats\"}', '2020-05-20 22:06:01', '2020-05-20 22:06:01');
+INSERT INTO `admin_operation_log` VALUES (613, 1, 'admin/helpers/scaffold', 'POST', '127.0.0.1', '{\"table_name\":\"merchant_plats\",\"exist-table\":\"ms-pay|merchant_plats\",\"model_name\":\"App\\\\Models\\\\MerchantPlat\",\"controller_name\":\"App\\\\MerchantAdmin\\\\Controllers\\\\MerchantPlatController\",\"create\":[\"model\",\"repository\",\"controller\",\"lang\"],\"fields\":[{\"name\":\"site_title\",\"translation\":\"\\u7ad9\\u70b9\\u540d\\u79f0\",\"type\":\"string\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":\"\\u7ad9\\u70b9\\u540d\\u79f0\"},{\"name\":\"plat_id\",\"translation\":\"\\u5e73\\u53f0ID\",\"type\":\"integer\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":\"\\u5e73\\u53f0ID\"},{\"name\":\"extra_json\",\"translation\":\"\\u673a\\u5668\\u4eba\\u767b\\u5f55\\u53c2\\u6570\",\"type\":\"text\",\"nullable\":\"on\",\"key\":null,\"default\":null,\"comment\":\"\\u673a\\u5668\\u4eba\\u767b\\u5f55\\u53c2\\u6570\"}],\"primary_key\":\"id\",\"timestamps\":\"1\",\"_token\":\"RpWtpT6dB3VqOcs17uc7fXDGiFLpPIismrksf97O\"}', '2020-05-20 22:06:50', '2020-05-20 22:06:50');
+INSERT INTO `admin_operation_log` VALUES (614, 1, 'admin/helpers/scaffold', 'GET', '127.0.0.1', '[]', '2020-05-20 22:06:50', '2020-05-20 22:06:50');
+INSERT INTO `admin_operation_log` VALUES (615, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-20 22:07:48', '2020-05-20 22:07:48');
+INSERT INTO `admin_operation_log` VALUES (616, 1, 'admin/helpers/scaffold', 'GET', '127.0.0.1', '[]', '2020-05-20 22:08:04', '2020-05-20 22:08:04');
+INSERT INTO `admin_operation_log` VALUES (617, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:08:09', '2020-05-20 22:08:09');
+INSERT INTO `admin_operation_log` VALUES (618, 1, 'admin/auth/permissions/create', 'GET', '127.0.0.1', '{\"_dialog_form_\":\"1\"}', '2020-05-20 22:08:14', '2020-05-20 22:08:14');
+INSERT INTO `admin_operation_log` VALUES (619, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:08:23', '2020-05-20 22:08:23');
+INSERT INTO `admin_operation_log` VALUES (620, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:08:23', '2020-05-20 22:08:23');
+INSERT INTO `admin_operation_log` VALUES (621, 1, 'admin/auth/permissions/create', 'GET', '127.0.0.1', '{\"_dialog_form_\":\"1\"}', '2020-05-20 22:08:25', '2020-05-20 22:08:25');
+INSERT INTO `admin_operation_log` VALUES (622, 1, 'admin/auth/permissions', 'POST', '127.0.0.1', '{\"_token\":\"RpWtpT6dB3VqOcs17uc7fXDGiFLpPIismrksf97O\",\"parent_id\":null,\"slug\":\"merchant-plats\",\"name\":\"\\u6211\\u7684\\u5e73\\u53f0\",\"http_method\":[null],\"http_path\":[null],\"_previous_\":\"http:\\/\\/127.0.0.1:8000\\/admin\\/auth\\/permissions\"}', '2020-05-20 22:10:18', '2020-05-20 22:10:18');
+INSERT INTO `admin_operation_log` VALUES (623, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:10:18', '2020-05-20 22:10:18');
+INSERT INTO `admin_operation_log` VALUES (624, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:10:18', '2020-05-20 22:10:18');
+INSERT INTO `admin_operation_log` VALUES (625, 1, 'admin/auth/permissions/10/edit', 'GET', '127.0.0.1', '{\"_dialog_form_\":\"1\"}', '2020-05-20 22:10:36', '2020-05-20 22:10:36');
+INSERT INTO `admin_operation_log` VALUES (626, 1, 'admin/auth/permissions/10', 'PUT', '127.0.0.1', '{\"_token\":\"RpWtpT6dB3VqOcs17uc7fXDGiFLpPIismrksf97O\",\"parent_id\":null,\"slug\":\"merchant-plats\",\"name\":\"\\u6211\\u7684\\u5e73\\u53f0\",\"http_method\":[null],\"http_path\":[\"\\/s s\",\"sss\",null],\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/127.0.0.1:8000\\/admin\\/auth\\/permissions\"}', '2020-05-20 22:11:15', '2020-05-20 22:11:15');
+INSERT INTO `admin_operation_log` VALUES (627, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:11:15', '2020-05-20 22:11:15');
+INSERT INTO `admin_operation_log` VALUES (628, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:11:15', '2020-05-20 22:11:15');
+INSERT INTO `admin_operation_log` VALUES (629, 1, 'admin/auth/permissions/10/edit', 'GET', '127.0.0.1', '{\"_dialog_form_\":\"1\"}', '2020-05-20 22:11:18', '2020-05-20 22:11:18');
+INSERT INTO `admin_operation_log` VALUES (630, 1, 'admin/auth/permissions/10', 'PUT', '127.0.0.1', '{\"_token\":\"RpWtpT6dB3VqOcs17uc7fXDGiFLpPIismrksf97O\",\"parent_id\":null,\"slug\":\"merchant-plats\",\"name\":\"\\u6211\\u7684\\u5e73\\u53f0\",\"http_method\":[null],\"http_path\":[\"\\/merchant-lists*\",null],\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/127.0.0.1:8000\\/admin\\/auth\\/permissions\"}', '2020-05-20 22:11:34', '2020-05-20 22:11:34');
+INSERT INTO `admin_operation_log` VALUES (631, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:11:34', '2020-05-20 22:11:34');
+INSERT INTO `admin_operation_log` VALUES (632, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:11:34', '2020-05-20 22:11:34');
+INSERT INTO `admin_operation_log` VALUES (633, 1, 'admin/auth/permissions/10/edit', 'GET', '127.0.0.1', '{\"_dialog_form_\":\"1\"}', '2020-05-20 22:12:10', '2020-05-20 22:12:10');
+INSERT INTO `admin_operation_log` VALUES (634, 1, 'admin/auth/permissions/10', 'DELETE', '127.0.0.1', '{\"_method\":\"delete\",\"_token\":\"RpWtpT6dB3VqOcs17uc7fXDGiFLpPIismrksf97O\"}', '2020-05-20 22:12:32', '2020-05-20 22:12:32');
+INSERT INTO `admin_operation_log` VALUES (635, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:12:32', '2020-05-20 22:12:32');
+INSERT INTO `admin_operation_log` VALUES (636, 2, 'merchant-admin', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:12:42', '2020-05-20 22:12:42');
+INSERT INTO `admin_operation_log` VALUES (637, 2, 'merchant-admin/dcat-api/value', 'POST', '127.0.0.1', '{\"_token\":\"Ole8FNgdJvnobXaY75xTMStyEQfk557wT89B8yLR\",\"_key\":\"App\\\\MerchantAdmin\\\\Metrics\\\\Examples\\\\Tickets\"}', '2020-05-20 22:12:42', '2020-05-20 22:12:42');
+INSERT INTO `admin_operation_log` VALUES (638, 2, 'merchant-admin/dcat-api/value', 'POST', '127.0.0.1', '{\"_token\":\"Ole8FNgdJvnobXaY75xTMStyEQfk557wT89B8yLR\",\"_key\":\"App\\\\MerchantAdmin\\\\Metrics\\\\Examples\\\\NewUsers\"}', '2020-05-20 22:12:42', '2020-05-20 22:12:42');
+INSERT INTO `admin_operation_log` VALUES (639, 2, 'merchant-admin/dcat-api/value', 'POST', '127.0.0.1', '{\"_token\":\"Ole8FNgdJvnobXaY75xTMStyEQfk557wT89B8yLR\",\"_key\":\"App\\\\MerchantAdmin\\\\Metrics\\\\Examples\\\\Sessions\"}', '2020-05-20 22:12:42', '2020-05-20 22:12:42');
+INSERT INTO `admin_operation_log` VALUES (640, 2, 'merchant-admin/dcat-api/value', 'POST', '127.0.0.1', '{\"_token\":\"Ole8FNgdJvnobXaY75xTMStyEQfk557wT89B8yLR\",\"_key\":\"App\\\\MerchantAdmin\\\\Metrics\\\\Examples\\\\ProductOrders\"}', '2020-05-20 22:12:42', '2020-05-20 22:12:42');
+INSERT INTO `admin_operation_log` VALUES (641, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:12:43', '2020-05-20 22:12:43');
+INSERT INTO `admin_operation_log` VALUES (642, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:12:47', '2020-05-20 22:12:47');
+INSERT INTO `admin_operation_log` VALUES (643, 2, 'merchant-admin/auth/logout', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:13:04', '2020-05-20 22:13:04');
+INSERT INTO `admin_operation_log` VALUES (644, 0, 'merchant-admin/auth/login', 'GET', '127.0.0.1', '[]', '2020-05-20 22:13:04', '2020-05-20 22:13:04');
+INSERT INTO `admin_operation_log` VALUES (645, 0, 'merchant-admin/auth/login', 'POST', '127.0.0.1', '{\"_token\":\"t2I2YIDDntN6wUg2OwFJNn8y2azmZQiTDum9RLh9\",\"username\":\"admin\",\"password\":\"adm******\"}', '2020-05-20 22:13:10', '2020-05-20 22:13:10');
+INSERT INTO `admin_operation_log` VALUES (646, 1, 'merchant-admin', 'GET', '127.0.0.1', '[]', '2020-05-20 22:13:10', '2020-05-20 22:13:10');
+INSERT INTO `admin_operation_log` VALUES (647, 1, 'merchant-admin/dcat-api/value', 'POST', '127.0.0.1', '{\"_token\":\"3H8IzGyct1k1HNIQfQ09pt7loL32wM85kBI4h8r3\",\"_key\":\"App\\\\MerchantAdmin\\\\Metrics\\\\Examples\\\\Tickets\"}', '2020-05-20 22:13:11', '2020-05-20 22:13:11');
+INSERT INTO `admin_operation_log` VALUES (648, 1, 'merchant-admin/dcat-api/value', 'POST', '127.0.0.1', '{\"_token\":\"3H8IzGyct1k1HNIQfQ09pt7loL32wM85kBI4h8r3\",\"_key\":\"App\\\\MerchantAdmin\\\\Metrics\\\\Examples\\\\NewUsers\"}', '2020-05-20 22:13:11', '2020-05-20 22:13:11');
+INSERT INTO `admin_operation_log` VALUES (649, 1, 'merchant-admin/dcat-api/value', 'POST', '127.0.0.1', '{\"_token\":\"3H8IzGyct1k1HNIQfQ09pt7loL32wM85kBI4h8r3\",\"_key\":\"App\\\\MerchantAdmin\\\\Metrics\\\\Examples\\\\Sessions\"}', '2020-05-20 22:13:11', '2020-05-20 22:13:11');
+INSERT INTO `admin_operation_log` VALUES (650, 1, 'merchant-admin/dcat-api/value', 'POST', '127.0.0.1', '{\"_token\":\"3H8IzGyct1k1HNIQfQ09pt7loL32wM85kBI4h8r3\",\"_key\":\"App\\\\MerchantAdmin\\\\Metrics\\\\Examples\\\\ProductOrders\"}', '2020-05-20 22:13:11', '2020-05-20 22:13:11');
+INSERT INTO `admin_operation_log` VALUES (651, 1, 'merchant-admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:13:13', '2020-05-20 22:13:13');
+INSERT INTO `admin_operation_log` VALUES (652, 1, 'merchant-admin/auth/permissions/create', 'GET', '127.0.0.1', '{\"_dialog_form_\":\"1\"}', '2020-05-20 22:13:17', '2020-05-20 22:13:17');
+INSERT INTO `admin_operation_log` VALUES (653, 1, 'merchant-admin/auth/permissions', 'POST', '127.0.0.1', '{\"_token\":\"3H8IzGyct1k1HNIQfQ09pt7loL32wM85kBI4h8r3\",\"parent_id\":null,\"slug\":\"merchant-list\",\"name\":\"\\u6211\\u7684\\u5e73\\u53f0\",\"http_method\":[null],\"http_path\":[\"\\/merchant-plats\",\"\\/merchant-plats\\/create\",\"\\/merchant-plats\\/*\",\"\\/merchant-plats\\/*\\/edit\",null],\"_previous_\":\"http:\\/\\/127.0.0.1:8000\\/merchant-admin\\/auth\\/permissions\"}', '2020-05-20 22:13:47', '2020-05-20 22:13:47');
+INSERT INTO `admin_operation_log` VALUES (654, 1, 'merchant-admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:13:47', '2020-05-20 22:13:47');
+INSERT INTO `admin_operation_log` VALUES (655, 1, 'merchant-admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:13:47', '2020-05-20 22:13:47');
+INSERT INTO `admin_operation_log` VALUES (656, 1, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:13:52', '2020-05-20 22:13:52');
+INSERT INTO `admin_operation_log` VALUES (657, 1, 'merchant-admin/merchant-plats/1/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:14:02', '2020-05-20 22:14:02');
+INSERT INTO `admin_operation_log` VALUES (658, 1, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:14:05', '2020-05-20 22:14:05');
+INSERT INTO `admin_operation_log` VALUES (659, 0, 'merchant-admin/auth/login', 'GET', '127.0.0.1', '[]', '2020-05-20 22:14:39', '2020-05-20 22:14:39');
+INSERT INTO `admin_operation_log` VALUES (660, 0, 'merchant-admin/auth/login', 'POST', '127.0.0.1', '{\"_token\":\"wONvHlioPXEOmmtNU16fXw9FUjnDBaVvdb5ZJrBH\",\"username\":\"admin\",\"password\":\"adm******\"}', '2020-05-20 22:14:41', '2020-05-20 22:14:41');
+INSERT INTO `admin_operation_log` VALUES (661, 1, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-20 22:14:41', '2020-05-20 22:14:41');
+INSERT INTO `admin_operation_log` VALUES (662, 1, 'merchant-admin/auth/logout', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:14:47', '2020-05-20 22:14:47');
+INSERT INTO `admin_operation_log` VALUES (663, 0, 'merchant-admin/auth/login', 'GET', '127.0.0.1', '[]', '2020-05-20 22:14:47', '2020-05-20 22:14:47');
+INSERT INTO `admin_operation_log` VALUES (664, 0, 'merchant-admin/auth/login', 'POST', '127.0.0.1', '{\"_token\":\"bw5k4NXJaBKtXiATJKrDyFaUi8lf3Mf34mI31JNE\",\"username\":\"merchant\",\"password\":\"123******\"}', '2020-05-20 22:14:51', '2020-05-20 22:14:51');
+INSERT INTO `admin_operation_log` VALUES (665, 2, 'merchant-admin', 'GET', '127.0.0.1', '[]', '2020-05-20 22:14:51', '2020-05-20 22:14:51');
+INSERT INTO `admin_operation_log` VALUES (666, 2, 'merchant-admin/dcat-api/value', 'POST', '127.0.0.1', '{\"_token\":\"JdrUJAofpgVhPGJS5gdDnw2JjoeCzVuD3T7KXKv1\",\"_key\":\"App\\\\MerchantAdmin\\\\Metrics\\\\Examples\\\\Tickets\"}', '2020-05-20 22:14:51', '2020-05-20 22:14:51');
+INSERT INTO `admin_operation_log` VALUES (667, 2, 'merchant-admin/dcat-api/value', 'POST', '127.0.0.1', '{\"_token\":\"JdrUJAofpgVhPGJS5gdDnw2JjoeCzVuD3T7KXKv1\",\"_key\":\"App\\\\MerchantAdmin\\\\Metrics\\\\Examples\\\\NewUsers\"}', '2020-05-20 22:14:51', '2020-05-20 22:14:51');
+INSERT INTO `admin_operation_log` VALUES (668, 2, 'merchant-admin/dcat-api/value', 'POST', '127.0.0.1', '{\"_token\":\"JdrUJAofpgVhPGJS5gdDnw2JjoeCzVuD3T7KXKv1\",\"_key\":\"App\\\\MerchantAdmin\\\\Metrics\\\\Examples\\\\Sessions\"}', '2020-05-20 22:14:51', '2020-05-20 22:14:51');
+INSERT INTO `admin_operation_log` VALUES (669, 2, 'merchant-admin/dcat-api/value', 'POST', '127.0.0.1', '{\"_token\":\"JdrUJAofpgVhPGJS5gdDnw2JjoeCzVuD3T7KXKv1\",\"_key\":\"App\\\\MerchantAdmin\\\\Metrics\\\\Examples\\\\ProductOrders\"}', '2020-05-20 22:14:51', '2020-05-20 22:14:51');
+INSERT INTO `admin_operation_log` VALUES (670, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:14:53', '2020-05-20 22:14:53');
+INSERT INTO `admin_operation_log` VALUES (671, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:14:54', '2020-05-20 22:14:54');
+INSERT INTO `admin_operation_log` VALUES (672, 1, 'merchant-admin/auth/roles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:14:59', '2020-05-20 22:14:59');
+INSERT INTO `admin_operation_log` VALUES (673, 1, 'merchant-admin/auth/roles/2/edit', 'GET', '127.0.0.1', '{\"_dialog_form_\":\"1\"}', '2020-05-20 22:15:01', '2020-05-20 22:15:01');
+INSERT INTO `admin_operation_log` VALUES (674, 1, 'merchant-admin/auth/roles/2', 'PUT', '127.0.0.1', '{\"_token\":\"1I9sNuEKhhQfVG5OqUrzO5EADr04eyxnHSDsWUKY\",\"slug\":\"merchant\",\"name\":\"\\u5546\\u6237\",\"permissions\":\"11\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/127.0.0.1:8000\\/merchant-admin\\/auth\\/roles\"}', '2020-05-20 22:15:06', '2020-05-20 22:15:06');
+INSERT INTO `admin_operation_log` VALUES (675, 1, 'merchant-admin/auth/roles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:15:06', '2020-05-20 22:15:06');
+INSERT INTO `admin_operation_log` VALUES (676, 1, 'merchant-admin/auth/roles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:15:06', '2020-05-20 22:15:06');
+INSERT INTO `admin_operation_log` VALUES (677, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:15:08', '2020-05-20 22:15:08');
+INSERT INTO `admin_operation_log` VALUES (678, 2, 'merchant-admin/merchant-plats/create', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 22:52:31', '2020-05-20 22:52:31');
+INSERT INTO `admin_operation_log` VALUES (679, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 23:06:56', '2020-05-20 23:06:56');
+INSERT INTO `admin_operation_log` VALUES (680, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-20 23:06:56', '2020-05-20 23:06:56');
+INSERT INTO `admin_operation_log` VALUES (681, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-20 23:07:08', '2020-05-20 23:07:08');
+INSERT INTO `admin_operation_log` VALUES (682, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-20 23:07:38', '2020-05-20 23:07:38');
+INSERT INTO `admin_operation_log` VALUES (683, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 23:08:03', '2020-05-20 23:08:03');
+INSERT INTO `admin_operation_log` VALUES (684, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 23:08:05', '2020-05-20 23:08:05');
+INSERT INTO `admin_operation_log` VALUES (685, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-20 23:08:12', '2020-05-20 23:08:12');
+INSERT INTO `admin_operation_log` VALUES (686, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 23:08:19', '2020-05-20 23:08:19');
+INSERT INTO `admin_operation_log` VALUES (687, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-20 23:09:09', '2020-05-20 23:09:09');
+INSERT INTO `admin_operation_log` VALUES (688, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-20 23:09:24', '2020-05-20 23:09:24');
+INSERT INTO `admin_operation_log` VALUES (689, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 23:11:56', '2020-05-20 23:11:56');
+INSERT INTO `admin_operation_log` VALUES (690, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 23:12:52', '2020-05-20 23:12:52');
+INSERT INTO `admin_operation_log` VALUES (691, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 23:15:34', '2020-05-20 23:15:34');
+INSERT INTO `admin_operation_log` VALUES (692, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 23:16:09', '2020-05-20 23:16:09');
+INSERT INTO `admin_operation_log` VALUES (693, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 23:17:33', '2020-05-20 23:17:33');
+INSERT INTO `admin_operation_log` VALUES (694, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 23:19:36', '2020-05-20 23:19:36');
+INSERT INTO `admin_operation_log` VALUES (695, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 23:20:47', '2020-05-20 23:20:47');
+INSERT INTO `admin_operation_log` VALUES (696, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 23:21:29', '2020-05-20 23:21:29');
+INSERT INTO `admin_operation_log` VALUES (697, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 23:21:29', '2020-05-20 23:21:29');
+INSERT INTO `admin_operation_log` VALUES (698, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 23:59:08', '2020-05-20 23:59:08');
+INSERT INTO `admin_operation_log` VALUES (699, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 23:59:10', '2020-05-20 23:59:10');
+INSERT INTO `admin_operation_log` VALUES (700, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-20 23:59:43', '2020-05-20 23:59:43');
+INSERT INTO `admin_operation_log` VALUES (701, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:00:11', '2020-05-21 00:00:11');
+INSERT INTO `admin_operation_log` VALUES (702, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:00:12', '2020-05-21 00:00:12');
+INSERT INTO `admin_operation_log` VALUES (703, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:07:45', '2020-05-21 00:07:45');
+INSERT INTO `admin_operation_log` VALUES (704, 1, 'merchant-admin/plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:08:35', '2020-05-21 00:08:35');
+INSERT INTO `admin_operation_log` VALUES (705, 1, 'merchant-admin/plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:08:37', '2020-05-21 00:08:37');
+INSERT INTO `admin_operation_log` VALUES (706, 1, 'merchant-admin/plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:08:38', '2020-05-21 00:08:38');
+INSERT INTO `admin_operation_log` VALUES (707, 1, 'merchant-admin/plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:08:38', '2020-05-21 00:08:38');
+INSERT INTO `admin_operation_log` VALUES (708, 1, 'merchant-admin/plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:08:41', '2020-05-21 00:08:41');
+INSERT INTO `admin_operation_log` VALUES (709, 1, 'merchant-admin/plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:08:41', '2020-05-21 00:08:41');
+INSERT INTO `admin_operation_log` VALUES (710, 1, 'admin/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 00:09:30', '2020-05-21 00:09:30');
+INSERT INTO `admin_operation_log` VALUES (711, 1, 'admin/plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:09:32', '2020-05-21 00:09:32');
+INSERT INTO `admin_operation_log` VALUES (712, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 00:09:49', '2020-05-21 00:09:49');
+INSERT INTO `admin_operation_log` VALUES (713, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 00:10:13', '2020-05-21 00:10:13');
+INSERT INTO `admin_operation_log` VALUES (714, 2, 'merchant-admin/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 00:10:14', '2020-05-21 00:10:14');
+INSERT INTO `admin_operation_log` VALUES (715, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 00:10:33', '2020-05-21 00:10:33');
+INSERT INTO `admin_operation_log` VALUES (716, 0, 'admin/auth/login', 'GET', '127.0.0.1', '[]', '2020-05-21 00:10:34', '2020-05-21 00:10:34');
+INSERT INTO `admin_operation_log` VALUES (717, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 00:10:54', '2020-05-21 00:10:54');
+INSERT INTO `admin_operation_log` VALUES (718, 2, 'merchant-admin/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 00:10:55', '2020-05-21 00:10:55');
+INSERT INTO `admin_operation_log` VALUES (719, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:11:04', '2020-05-21 00:11:04');
+INSERT INTO `admin_operation_log` VALUES (720, 1, 'admin/auth/menu', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:11:29', '2020-05-21 00:11:29');
+INSERT INTO `admin_operation_log` VALUES (721, 1, 'admin/auth/roles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:11:30', '2020-05-21 00:11:30');
+INSERT INTO `admin_operation_log` VALUES (722, 1, 'admin/auth/roles/2/edit', 'GET', '127.0.0.1', '{\"_dialog_form_\":\"1\"}', '2020-05-21 00:11:34', '2020-05-21 00:11:34');
+INSERT INTO `admin_operation_log` VALUES (723, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:11:39', '2020-05-21 00:11:39');
+INSERT INTO `admin_operation_log` VALUES (724, 1, 'admin/auth/permissions/create', 'GET', '127.0.0.1', '{\"_dialog_form_\":\"1\"}', '2020-05-21 00:11:43', '2020-05-21 00:11:43');
+INSERT INTO `admin_operation_log` VALUES (725, 1, 'admin/auth/permissions', 'POST', '127.0.0.1', '{\"_token\":\"RpWtpT6dB3VqOcs17uc7fXDGiFLpPIismrksf97O\",\"parent_id\":null,\"slug\":\"plat-list\",\"name\":\"\\u83b7\\u53d6\\u63a5\\u5165\\u5e73\\u53f0\\u5217\\u8868\",\"http_method\":[\"GET\",null],\"http_path\":[\"\\/merchant-admin\\/plats\",null],\"_previous_\":\"http:\\/\\/127.0.0.1:8000\\/admin\\/auth\\/permissions\"}', '2020-05-21 00:12:24', '2020-05-21 00:12:24');
+INSERT INTO `admin_operation_log` VALUES (726, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:12:24', '2020-05-21 00:12:24');
+INSERT INTO `admin_operation_log` VALUES (727, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:12:24', '2020-05-21 00:12:24');
+INSERT INTO `admin_operation_log` VALUES (728, 1, 'admin/auth/logout', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:12:38', '2020-05-21 00:12:38');
+INSERT INTO `admin_operation_log` VALUES (729, 0, 'admin/auth/login', 'GET', '127.0.0.1', '[]', '2020-05-21 00:12:38', '2020-05-21 00:12:38');
+INSERT INTO `admin_operation_log` VALUES (730, 1, 'merchant-admin/auth/login', 'GET', '127.0.0.1', '[]', '2020-05-21 00:12:50', '2020-05-21 00:12:50');
+INSERT INTO `admin_operation_log` VALUES (731, 1, 'merchant-admin', 'GET', '127.0.0.1', '[]', '2020-05-21 00:12:50', '2020-05-21 00:12:50');
+INSERT INTO `admin_operation_log` VALUES (732, 1, 'merchant-admin/dcat-api/value', 'POST', '127.0.0.1', '{\"_token\":\"1I9sNuEKhhQfVG5OqUrzO5EADr04eyxnHSDsWUKY\",\"_key\":\"App\\\\MerchantAdmin\\\\Metrics\\\\Examples\\\\Tickets\"}', '2020-05-21 00:12:50', '2020-05-21 00:12:50');
+INSERT INTO `admin_operation_log` VALUES (733, 1, 'merchant-admin/dcat-api/value', 'POST', '127.0.0.1', '{\"_token\":\"1I9sNuEKhhQfVG5OqUrzO5EADr04eyxnHSDsWUKY\",\"_key\":\"App\\\\MerchantAdmin\\\\Metrics\\\\Examples\\\\NewUsers\"}', '2020-05-21 00:12:50', '2020-05-21 00:12:50');
+INSERT INTO `admin_operation_log` VALUES (734, 1, 'merchant-admin/dcat-api/value', 'POST', '127.0.0.1', '{\"_token\":\"1I9sNuEKhhQfVG5OqUrzO5EADr04eyxnHSDsWUKY\",\"_key\":\"App\\\\MerchantAdmin\\\\Metrics\\\\Examples\\\\Sessions\"}', '2020-05-21 00:12:50', '2020-05-21 00:12:50');
+INSERT INTO `admin_operation_log` VALUES (735, 1, 'merchant-admin/dcat-api/value', 'POST', '127.0.0.1', '{\"_token\":\"1I9sNuEKhhQfVG5OqUrzO5EADr04eyxnHSDsWUKY\",\"_key\":\"App\\\\MerchantAdmin\\\\Metrics\\\\Examples\\\\ProductOrders\"}', '2020-05-21 00:12:50', '2020-05-21 00:12:50');
+INSERT INTO `admin_operation_log` VALUES (736, 1, 'merchant-admin/plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:12:51', '2020-05-21 00:12:51');
+INSERT INTO `admin_operation_log` VALUES (737, 1, 'merchant-admin/auth/menu', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:12:53', '2020-05-21 00:12:53');
+INSERT INTO `admin_operation_log` VALUES (738, 1, 'merchant-admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:12:54', '2020-05-21 00:12:54');
+INSERT INTO `admin_operation_log` VALUES (739, 1, 'merchant-admin/auth/roles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:13:10', '2020-05-21 00:13:10');
+INSERT INTO `admin_operation_log` VALUES (740, 1, 'merchant-admin/auth/roles/2/edit', 'GET', '127.0.0.1', '{\"_dialog_form_\":\"1\"}', '2020-05-21 00:13:13', '2020-05-21 00:13:13');
+INSERT INTO `admin_operation_log` VALUES (741, 1, 'merchant-admin/auth/roles/2', 'PUT', '127.0.0.1', '{\"_token\":\"1I9sNuEKhhQfVG5OqUrzO5EADr04eyxnHSDsWUKY\",\"slug\":\"merchant\",\"name\":\"\\u5546\\u6237\",\"permissions\":\"11,12\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/127.0.0.1:8000\\/merchant-admin\\/auth\\/roles\"}', '2020-05-21 00:13:17', '2020-05-21 00:13:17');
+INSERT INTO `admin_operation_log` VALUES (742, 1, 'merchant-admin/auth/roles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:13:17', '2020-05-21 00:13:17');
+INSERT INTO `admin_operation_log` VALUES (743, 1, 'merchant-admin/auth/roles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:13:17', '2020-05-21 00:13:17');
+INSERT INTO `admin_operation_log` VALUES (744, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 00:13:21', '2020-05-21 00:13:21');
+INSERT INTO `admin_operation_log` VALUES (745, 2, 'merchant-admin/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 00:13:22', '2020-05-21 00:13:22');
+INSERT INTO `admin_operation_log` VALUES (746, 1, 'merchant-admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:13:31', '2020-05-21 00:13:31');
+INSERT INTO `admin_operation_log` VALUES (747, 1, 'merchant-admin/auth/permissions/12/edit', 'GET', '127.0.0.1', '{\"_dialog_form_\":\"1\"}', '2020-05-21 00:13:35', '2020-05-21 00:13:35');
+INSERT INTO `admin_operation_log` VALUES (748, 1, 'merchant-admin/auth/roles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:13:59', '2020-05-21 00:13:59');
+INSERT INTO `admin_operation_log` VALUES (749, 1, 'merchant-admin/auth/roles/2/edit', 'GET', '127.0.0.1', '{\"_dialog_form_\":\"1\"}', '2020-05-21 00:14:01', '2020-05-21 00:14:01');
+INSERT INTO `admin_operation_log` VALUES (750, 1, 'merchant-admin/auth/roles/2/edit', 'GET', '127.0.0.1', '{\"_dialog_form_\":\"1\"}', '2020-05-21 00:14:08', '2020-05-21 00:14:08');
+INSERT INTO `admin_operation_log` VALUES (751, 1, 'merchant-admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:14:12', '2020-05-21 00:14:12');
+INSERT INTO `admin_operation_log` VALUES (752, 1, 'merchant-admin/auth/permissions/12/edit', 'GET', '127.0.0.1', '{\"_dialog_form_\":\"1\"}', '2020-05-21 00:14:15', '2020-05-21 00:14:15');
+INSERT INTO `admin_operation_log` VALUES (753, 1, 'merchant-admin/auth/permissions/12', 'PUT', '127.0.0.1', '{\"_token\":\"1I9sNuEKhhQfVG5OqUrzO5EADr04eyxnHSDsWUKY\",\"parent_id\":null,\"slug\":\"plat-list\",\"name\":\"\\u83b7\\u53d6\\u63a5\\u5165\\u5e73\\u53f0\\u5217\\u8868\",\"http_method\":[\"GET\",null],\"http_path\":[\"\\/merchant-admin\\/plats*\",null],\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/127.0.0.1:8000\\/merchant-admin\\/auth\\/permissions\"}', '2020-05-21 00:14:30', '2020-05-21 00:14:30');
+INSERT INTO `admin_operation_log` VALUES (754, 1, 'merchant-admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:14:30', '2020-05-21 00:14:30');
+INSERT INTO `admin_operation_log` VALUES (755, 1, 'merchant-admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:14:30', '2020-05-21 00:14:30');
+INSERT INTO `admin_operation_log` VALUES (756, 1, 'merchant-admin/auth/permissions/12/edit', 'GET', '127.0.0.1', '{\"_dialog_form_\":\"1\"}', '2020-05-21 00:14:35', '2020-05-21 00:14:35');
+INSERT INTO `admin_operation_log` VALUES (757, 1, 'merchant-admin/auth/permissions/12', 'PUT', '127.0.0.1', '{\"_token\":\"1I9sNuEKhhQfVG5OqUrzO5EADr04eyxnHSDsWUKY\",\"parent_id\":null,\"slug\":\"plat-list\",\"name\":\"\\u83b7\\u53d6\\u63a5\\u5165\\u5e73\\u53f0\\u5217\\u8868\",\"http_method\":[\"GET\",null],\"http_path\":[\"\\/merchant-admin\\/plats*\",null],\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/127.0.0.1:8000\\/merchant-admin\\/auth\\/permissions\"}', '2020-05-21 00:15:09', '2020-05-21 00:15:09');
+INSERT INTO `admin_operation_log` VALUES (758, 1, 'merchant-admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:15:09', '2020-05-21 00:15:09');
+INSERT INTO `admin_operation_log` VALUES (759, 1, 'merchant-admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:15:09', '2020-05-21 00:15:09');
+INSERT INTO `admin_operation_log` VALUES (760, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 00:15:17', '2020-05-21 00:15:17');
+INSERT INTO `admin_operation_log` VALUES (761, 2, 'merchant-admin/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 00:15:19', '2020-05-21 00:15:19');
+INSERT INTO `admin_operation_log` VALUES (762, 1, 'merchant-admin/auth/permissions/12/edit', 'GET', '127.0.0.1', '{\"_dialog_form_\":\"1\"}', '2020-05-21 00:17:12', '2020-05-21 00:17:12');
+INSERT INTO `admin_operation_log` VALUES (763, 1, 'merchant-admin/auth/permissions/12', 'PUT', '127.0.0.1', '{\"_token\":\"1I9sNuEKhhQfVG5OqUrzO5EADr04eyxnHSDsWUKY\",\"parent_id\":null,\"slug\":\"plat-list\",\"name\":\"\\u83b7\\u53d6\\u63a5\\u5165\\u5e73\\u53f0\\u5217\\u8868\",\"http_method\":[\"GET\",null],\"http_path\":[\"\\/plat_list\",null],\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/127.0.0.1:8000\\/merchant-admin\\/auth\\/permissions\"}', '2020-05-21 00:17:24', '2020-05-21 00:17:24');
+INSERT INTO `admin_operation_log` VALUES (764, 1, 'merchant-admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:17:24', '2020-05-21 00:17:24');
+INSERT INTO `admin_operation_log` VALUES (765, 1, 'merchant-admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:17:24', '2020-05-21 00:17:24');
+INSERT INTO `admin_operation_log` VALUES (766, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 00:17:34', '2020-05-21 00:17:34');
+INSERT INTO `admin_operation_log` VALUES (767, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 00:17:48', '2020-05-21 00:17:48');
+INSERT INTO `admin_operation_log` VALUES (768, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 00:17:49', '2020-05-21 00:17:49');
+INSERT INTO `admin_operation_log` VALUES (769, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 00:19:30', '2020-05-21 00:19:30');
+INSERT INTO `admin_operation_log` VALUES (770, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 00:19:31', '2020-05-21 00:19:31');
+INSERT INTO `admin_operation_log` VALUES (771, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 00:23:48', '2020-05-21 00:23:48');
+INSERT INTO `admin_operation_log` VALUES (772, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 00:23:50', '2020-05-21 00:23:50');
+INSERT INTO `admin_operation_log` VALUES (773, 1, 'merchant-admin/auth/permissions', 'GET', '127.0.0.1', '[]', '2020-05-21 00:44:14', '2020-05-21 00:44:14');
+INSERT INTO `admin_operation_log` VALUES (774, 0, 'admin/auth/login', 'GET', '127.0.0.1', '[]', '2020-05-21 00:44:20', '2020-05-21 00:44:20');
+INSERT INTO `admin_operation_log` VALUES (775, 0, 'admin/auth/login', 'POST', '127.0.0.1', '{\"_token\":\"9dzyRUVJ64qG4GdSgk6qAy6prdF7YP7Np2ayQqFK\",\"username\":\"admin\",\"password\":\"adm******\"}', '2020-05-21 00:44:22', '2020-05-21 00:44:22');
+INSERT INTO `admin_operation_log` VALUES (776, 1, 'admin', 'GET', '127.0.0.1', '[]', '2020-05-21 00:44:22', '2020-05-21 00:44:22');
+INSERT INTO `admin_operation_log` VALUES (777, 1, 'admin/plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:44:28', '2020-05-21 00:44:28');
+INSERT INTO `admin_operation_log` VALUES (778, 1, 'admin/plats/1/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:44:33', '2020-05-21 00:44:33');
+INSERT INTO `admin_operation_log` VALUES (779, 1, 'admin/plats/1', 'PUT', '127.0.0.1', '{\"name\":\"\\u5927\\u53d1\",\"extra_json\":{\"new___LA_KEY__\":{\"key\":\"api_url\",\"value\":\"11\",\"desc\":\"\\u5927\\u53d1\\u63a5\\u53e3\\u5730\\u5740\",\"_remove_\":null},\"1\":{\"key\":\"dafa_id\",\"value\":\"222\",\"desc\":\"\\u5927\\u53d1ID\",\"_remove_\":null},\"2\":{\"key\":\"dafa_secret\",\"value\":\"33\",\"desc\":\"\\u5927\\u53d1\\u5bc6\\u94a5\",\"_remove_\":null}},\"status\":\"1\",\"_token\":\"QcGhfriN7b4lOSVqyJ3kH0984gUjUdDnr1t8R3ZR\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/127.0.0.1:8000\\/admin\\/plats\"}', '2020-05-21 00:44:40', '2020-05-21 00:44:40');
+INSERT INTO `admin_operation_log` VALUES (780, 1, 'admin/plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:44:40', '2020-05-21 00:44:40');
+INSERT INTO `admin_operation_log` VALUES (781, 1, 'admin/plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:44:43', '2020-05-21 00:44:43');
+INSERT INTO `admin_operation_log` VALUES (782, 1, 'admin/plats/2/edit', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:44:47', '2020-05-21 00:44:47');
+INSERT INTO `admin_operation_log` VALUES (783, 1, 'admin/plats/2', 'PUT', '127.0.0.1', '{\"name\":\"\\u4e2d\\u535a\",\"extra_json\":{\"new___LA_KEY__\":{\"key\":\"admin_url\",\"value\":\"11\",\"desc\":\"\\u540e\\u53f0\\u767b\\u5f55\\u57df\\u540d\",\"_remove_\":null},\"1\":{\"key\":\"username\",\"value\":\"22\",\"desc\":\"\\u673a\\u5668\\u4eba\\u8d26\\u6237\",\"_remove_\":null},\"2\":{\"key\":\"password\",\"value\":\"11\",\"desc\":\"\\u673a\\u5668\\u4eba\\u5bc6\\u7801\",\"_remove_\":null}},\"status\":\"1\",\"_token\":\"QcGhfriN7b4lOSVqyJ3kH0984gUjUdDnr1t8R3ZR\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/127.0.0.1:8000\\/admin\\/plats\"}', '2020-05-21 00:44:51', '2020-05-21 00:44:51');
+INSERT INTO `admin_operation_log` VALUES (784, 1, 'admin/plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 00:44:51', '2020-05-21 00:44:51');
+INSERT INTO `admin_operation_log` VALUES (785, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 01:10:57', '2020-05-21 01:10:57');
+INSERT INTO `admin_operation_log` VALUES (786, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:11:04', '2020-05-21 01:11:04');
+INSERT INTO `admin_operation_log` VALUES (787, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 01:15:44', '2020-05-21 01:15:44');
+INSERT INTO `admin_operation_log` VALUES (788, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:15:45', '2020-05-21 01:15:45');
+INSERT INTO `admin_operation_log` VALUES (789, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 01:16:38', '2020-05-21 01:16:38');
+INSERT INTO `admin_operation_log` VALUES (790, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:16:38', '2020-05-21 01:16:38');
+INSERT INTO `admin_operation_log` VALUES (791, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 01:16:39', '2020-05-21 01:16:39');
+INSERT INTO `admin_operation_log` VALUES (792, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:16:39', '2020-05-21 01:16:39');
+INSERT INTO `admin_operation_log` VALUES (793, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 01:17:07', '2020-05-21 01:17:07');
+INSERT INTO `admin_operation_log` VALUES (794, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:17:07', '2020-05-21 01:17:07');
+INSERT INTO `admin_operation_log` VALUES (795, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 01:17:08', '2020-05-21 01:17:08');
+INSERT INTO `admin_operation_log` VALUES (796, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:17:08', '2020-05-21 01:17:08');
+INSERT INTO `admin_operation_log` VALUES (797, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 01:17:10', '2020-05-21 01:17:10');
+INSERT INTO `admin_operation_log` VALUES (798, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:17:10', '2020-05-21 01:17:10');
+INSERT INTO `admin_operation_log` VALUES (799, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 01:17:35', '2020-05-21 01:17:35');
+INSERT INTO `admin_operation_log` VALUES (800, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:17:35', '2020-05-21 01:17:35');
+INSERT INTO `admin_operation_log` VALUES (801, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 01:17:51', '2020-05-21 01:17:51');
+INSERT INTO `admin_operation_log` VALUES (802, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:17:51', '2020-05-21 01:17:51');
+INSERT INTO `admin_operation_log` VALUES (803, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 01:17:51', '2020-05-21 01:17:51');
+INSERT INTO `admin_operation_log` VALUES (804, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:17:52', '2020-05-21 01:17:52');
+INSERT INTO `admin_operation_log` VALUES (805, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 01:20:46', '2020-05-21 01:20:46');
+INSERT INTO `admin_operation_log` VALUES (806, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:20:48', '2020-05-21 01:20:48');
+INSERT INTO `admin_operation_log` VALUES (807, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 01:21:17', '2020-05-21 01:21:17');
+INSERT INTO `admin_operation_log` VALUES (808, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 01:23:02', '2020-05-21 01:23:02');
+INSERT INTO `admin_operation_log` VALUES (809, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:23:04', '2020-05-21 01:23:04');
+INSERT INTO `admin_operation_log` VALUES (810, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 01:23:37', '2020-05-21 01:23:37');
+INSERT INTO `admin_operation_log` VALUES (811, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:23:38', '2020-05-21 01:23:38');
+INSERT INTO `admin_operation_log` VALUES (812, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 01:23:57', '2020-05-21 01:23:57');
+INSERT INTO `admin_operation_log` VALUES (813, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:23:59', '2020-05-21 01:23:59');
+INSERT INTO `admin_operation_log` VALUES (814, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 01:24:15', '2020-05-21 01:24:15');
+INSERT INTO `admin_operation_log` VALUES (815, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:24:16', '2020-05-21 01:24:16');
+INSERT INTO `admin_operation_log` VALUES (816, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 01:26:09', '2020-05-21 01:26:09');
+INSERT INTO `admin_operation_log` VALUES (817, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:26:09', '2020-05-21 01:26:09');
+INSERT INTO `admin_operation_log` VALUES (818, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 01:26:57', '2020-05-21 01:26:57');
+INSERT INTO `admin_operation_log` VALUES (819, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:26:59', '2020-05-21 01:26:59');
+INSERT INTO `admin_operation_log` VALUES (820, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 01:27:00', '2020-05-21 01:27:00');
+INSERT INTO `admin_operation_log` VALUES (821, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:27:01', '2020-05-21 01:27:01');
+INSERT INTO `admin_operation_log` VALUES (822, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 01:27:22', '2020-05-21 01:27:22');
+INSERT INTO `admin_operation_log` VALUES (823, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:27:22', '2020-05-21 01:27:22');
+INSERT INTO `admin_operation_log` VALUES (824, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 01:27:50', '2020-05-21 01:27:50');
+INSERT INTO `admin_operation_log` VALUES (825, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:27:51', '2020-05-21 01:27:51');
+INSERT INTO `admin_operation_log` VALUES (826, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 01:28:12', '2020-05-21 01:28:12');
+INSERT INTO `admin_operation_log` VALUES (827, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:28:13', '2020-05-21 01:28:13');
+INSERT INTO `admin_operation_log` VALUES (828, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 01:28:44', '2020-05-21 01:28:44');
+INSERT INTO `admin_operation_log` VALUES (829, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:28:45', '2020-05-21 01:28:45');
+INSERT INTO `admin_operation_log` VALUES (830, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 01:48:59', '2020-05-21 01:48:59');
+INSERT INTO `admin_operation_log` VALUES (831, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:49:04', '2020-05-21 01:49:04');
+INSERT INTO `admin_operation_log` VALUES (832, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 01:49:30', '2020-05-21 01:49:30');
+INSERT INTO `admin_operation_log` VALUES (833, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:49:31', '2020-05-21 01:49:31');
+INSERT INTO `admin_operation_log` VALUES (834, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 01:50:03', '2020-05-21 01:50:03');
+INSERT INTO `admin_operation_log` VALUES (835, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:50:04', '2020-05-21 01:50:04');
+INSERT INTO `admin_operation_log` VALUES (836, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 01:50:35', '2020-05-21 01:50:35');
+INSERT INTO `admin_operation_log` VALUES (837, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:50:36', '2020-05-21 01:50:36');
+INSERT INTO `admin_operation_log` VALUES (838, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 01:50:38', '2020-05-21 01:50:38');
+INSERT INTO `admin_operation_log` VALUES (839, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:50:40', '2020-05-21 01:50:40');
+INSERT INTO `admin_operation_log` VALUES (840, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 01:50:41', '2020-05-21 01:50:41');
+INSERT INTO `admin_operation_log` VALUES (841, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:50:41', '2020-05-21 01:50:41');
+INSERT INTO `admin_operation_log` VALUES (842, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 01:52:12', '2020-05-21 01:52:12');
+INSERT INTO `admin_operation_log` VALUES (843, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:52:12', '2020-05-21 01:52:12');
+INSERT INTO `admin_operation_log` VALUES (844, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 01:52:40', '2020-05-21 01:52:40');
+INSERT INTO `admin_operation_log` VALUES (845, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:52:42', '2020-05-21 01:52:42');
+INSERT INTO `admin_operation_log` VALUES (846, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 01:53:49', '2020-05-21 01:53:49');
+INSERT INTO `admin_operation_log` VALUES (847, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:53:50', '2020-05-21 01:53:50');
+INSERT INTO `admin_operation_log` VALUES (848, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 01:54:11', '2020-05-21 01:54:11');
+INSERT INTO `admin_operation_log` VALUES (849, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:54:12', '2020-05-21 01:54:12');
+INSERT INTO `admin_operation_log` VALUES (850, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 01:54:59', '2020-05-21 01:54:59');
+INSERT INTO `admin_operation_log` VALUES (851, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:55:00', '2020-05-21 01:55:00');
+INSERT INTO `admin_operation_log` VALUES (852, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 01:55:34', '2020-05-21 01:55:34');
+INSERT INTO `admin_operation_log` VALUES (853, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:55:34', '2020-05-21 01:55:34');
+INSERT INTO `admin_operation_log` VALUES (854, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 01:55:47', '2020-05-21 01:55:47');
+INSERT INTO `admin_operation_log` VALUES (855, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:55:47', '2020-05-21 01:55:47');
+INSERT INTO `admin_operation_log` VALUES (856, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 01:56:26', '2020-05-21 01:56:26');
+INSERT INTO `admin_operation_log` VALUES (857, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:56:26', '2020-05-21 01:56:26');
+INSERT INTO `admin_operation_log` VALUES (858, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 01:56:56', '2020-05-21 01:56:56');
+INSERT INTO `admin_operation_log` VALUES (859, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:56:57', '2020-05-21 01:56:57');
+INSERT INTO `admin_operation_log` VALUES (860, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 01:58:10', '2020-05-21 01:58:10');
+INSERT INTO `admin_operation_log` VALUES (861, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:58:11', '2020-05-21 01:58:11');
+INSERT INTO `admin_operation_log` VALUES (862, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 01:59:33', '2020-05-21 01:59:33');
+INSERT INTO `admin_operation_log` VALUES (863, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 01:59:34', '2020-05-21 01:59:34');
+INSERT INTO `admin_operation_log` VALUES (864, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:00:35', '2020-05-21 02:00:35');
+INSERT INTO `admin_operation_log` VALUES (865, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:00:36', '2020-05-21 02:00:36');
+INSERT INTO `admin_operation_log` VALUES (866, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:00:59', '2020-05-21 02:00:59');
+INSERT INTO `admin_operation_log` VALUES (867, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:00:59', '2020-05-21 02:00:59');
+INSERT INTO `admin_operation_log` VALUES (868, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:03:54', '2020-05-21 02:03:54');
+INSERT INTO `admin_operation_log` VALUES (869, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:03:55', '2020-05-21 02:03:55');
+INSERT INTO `admin_operation_log` VALUES (870, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:05:56', '2020-05-21 02:05:56');
+INSERT INTO `admin_operation_log` VALUES (871, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:05:57', '2020-05-21 02:05:57');
+INSERT INTO `admin_operation_log` VALUES (872, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:06:32', '2020-05-21 02:06:32');
+INSERT INTO `admin_operation_log` VALUES (873, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:06:42', '2020-05-21 02:06:42');
+INSERT INTO `admin_operation_log` VALUES (874, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:06:43', '2020-05-21 02:06:43');
+INSERT INTO `admin_operation_log` VALUES (875, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:07:23', '2020-05-21 02:07:23');
+INSERT INTO `admin_operation_log` VALUES (876, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:07:27', '2020-05-21 02:07:27');
+INSERT INTO `admin_operation_log` VALUES (877, 2, 'merchant-admin/merchant-plats', 'POST', '127.0.0.1', '{\"site_title\":\"11\",\"plat_id\":2,\"extra_json\":[{\"key\":\"admin_url\",\"value\":\"11\",\"desc\":\"\\u540e\\u53f0\\u767b\\u5f55\\u57df\\u540d\"},{\"key\":\"username\",\"value\":\"22\",\"desc\":\"\\u673a\\u5668\\u4eba\\u8d26\\u6237\"},{\"key\":\"password\",\"value\":\"11\",\"desc\":\"\\u673a\\u5668\\u4eba\\u5bc6\\u7801\"}]}', '2020-05-21 02:07:33', '2020-05-21 02:07:33');
+INSERT INTO `admin_operation_log` VALUES (878, 2, 'merchant-admin/merchant-plats', 'POST', '127.0.0.1', '{\"site_title\":\"11\",\"plat_id\":2,\"extra_json\":[{\"key\":\"admin_url\",\"value\":\"11\",\"desc\":\"\\u540e\\u53f0\\u767b\\u5f55\\u57df\\u540d\"},{\"key\":\"username\",\"value\":\"22\",\"desc\":\"\\u673a\\u5668\\u4eba\\u8d26\\u6237\"},{\"key\":\"password\",\"value\":\"11\",\"desc\":\"\\u673a\\u5668\\u4eba\\u5bc6\\u7801\"}]}', '2020-05-21 02:12:19', '2020-05-21 02:12:19');
+INSERT INTO `admin_operation_log` VALUES (879, 2, 'merchant-admin/merchant-plats', 'POST', '127.0.0.1', '{\"site_title\":\"11\",\"plat_id\":2,\"extra_json\":[{\"key\":\"admin_url\",\"value\":\"11\",\"desc\":\"\\u540e\\u53f0\\u767b\\u5f55\\u57df\\u540d\"},{\"key\":\"username\",\"value\":\"22\",\"desc\":\"\\u673a\\u5668\\u4eba\\u8d26\\u6237\"},{\"key\":\"password\",\"value\":\"11\",\"desc\":\"\\u673a\\u5668\\u4eba\\u5bc6\\u7801\"}]}', '2020-05-21 02:13:03', '2020-05-21 02:13:03');
+INSERT INTO `admin_operation_log` VALUES (880, 2, 'merchant-admin/merchant-plats', 'POST', '127.0.0.1', '{\"site_title\":\"11\",\"plat_id\":2,\"extra_json\":[{\"key\":\"admin_url\",\"value\":\"11\",\"desc\":\"\\u540e\\u53f0\\u767b\\u5f55\\u57df\\u540d\"},{\"key\":\"username\",\"value\":\"22\",\"desc\":\"\\u673a\\u5668\\u4eba\\u8d26\\u6237\"},{\"key\":\"password\",\"value\":\"11\",\"desc\":\"\\u673a\\u5668\\u4eba\\u5bc6\\u7801\"}]}', '2020-05-21 02:13:50', '2020-05-21 02:13:50');
+INSERT INTO `admin_operation_log` VALUES (881, 1, 'admin/plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:21:46', '2020-05-21 02:21:46');
+INSERT INTO `admin_operation_log` VALUES (882, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:21:48', '2020-05-21 02:21:48');
+INSERT INTO `admin_operation_log` VALUES (883, 1, 'admin/auth/permissions/create', 'GET', '127.0.0.1', '{\"_dialog_form_\":\"1\"}', '2020-05-21 02:21:51', '2020-05-21 02:21:51');
+INSERT INTO `admin_operation_log` VALUES (884, 1, 'admin/auth/permissions', 'POST', '127.0.0.1', '{\"_token\":\"QcGhfriN7b4lOSVqyJ3kH0984gUjUdDnr1t8R3ZR\",\"parent_id\":null,\"slug\":\"merchant-api\",\"name\":\"\\u5546\\u6237\\u63a5\\u53e3\",\"http_method\":[null],\"http_path\":[\"\\/merchant\\/*\",null],\"_previous_\":\"http:\\/\\/127.0.0.1:8000\\/admin\\/auth\\/permissions\"}', '2020-05-21 02:22:30', '2020-05-21 02:22:30');
+INSERT INTO `admin_operation_log` VALUES (885, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:22:30', '2020-05-21 02:22:30');
+INSERT INTO `admin_operation_log` VALUES (886, 1, 'admin/auth/permissions', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:22:30', '2020-05-21 02:22:30');
+INSERT INTO `admin_operation_log` VALUES (887, 1, 'admin/auth/roles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:22:37', '2020-05-21 02:22:37');
+INSERT INTO `admin_operation_log` VALUES (888, 1, 'admin/auth/roles/2/edit', 'GET', '127.0.0.1', '{\"_dialog_form_\":\"1\"}', '2020-05-21 02:22:40', '2020-05-21 02:22:40');
+INSERT INTO `admin_operation_log` VALUES (889, 1, 'admin/auth/roles/2', 'PUT', '127.0.0.1', '{\"_token\":\"QcGhfriN7b4lOSVqyJ3kH0984gUjUdDnr1t8R3ZR\",\"slug\":\"merchant\",\"name\":\"\\u5546\\u6237\",\"permissions\":\"11,12,13\",\"_method\":\"PUT\",\"_previous_\":\"http:\\/\\/127.0.0.1:8000\\/admin\\/auth\\/roles\"}', '2020-05-21 02:22:44', '2020-05-21 02:22:44');
+INSERT INTO `admin_operation_log` VALUES (890, 1, 'admin/auth/roles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:22:44', '2020-05-21 02:22:44');
+INSERT INTO `admin_operation_log` VALUES (891, 1, 'admin/auth/roles', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:22:44', '2020-05-21 02:22:44');
+INSERT INTO `admin_operation_log` VALUES (892, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:22:57', '2020-05-21 02:22:57');
+INSERT INTO `admin_operation_log` VALUES (893, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:22:58', '2020-05-21 02:22:58');
+INSERT INTO `admin_operation_log` VALUES (894, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:23:03', '2020-05-21 02:23:03');
+INSERT INTO `admin_operation_log` VALUES (895, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:23:04', '2020-05-21 02:23:04');
+INSERT INTO `admin_operation_log` VALUES (896, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:23:25', '2020-05-21 02:23:25');
+INSERT INTO `admin_operation_log` VALUES (897, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:23:25', '2020-05-21 02:23:25');
+INSERT INTO `admin_operation_log` VALUES (898, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:23:25', '2020-05-21 02:23:25');
+INSERT INTO `admin_operation_log` VALUES (899, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:26:06', '2020-05-21 02:26:06');
+INSERT INTO `admin_operation_log` VALUES (900, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:26:07', '2020-05-21 02:26:07');
+INSERT INTO `admin_operation_log` VALUES (901, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:26:07', '2020-05-21 02:26:07');
+INSERT INTO `admin_operation_log` VALUES (902, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:28:48', '2020-05-21 02:28:48');
+INSERT INTO `admin_operation_log` VALUES (903, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:28:50', '2020-05-21 02:28:50');
+INSERT INTO `admin_operation_log` VALUES (904, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:28:50', '2020-05-21 02:28:50');
+INSERT INTO `admin_operation_log` VALUES (905, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:30:32', '2020-05-21 02:30:32');
+INSERT INTO `admin_operation_log` VALUES (906, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:30:32', '2020-05-21 02:30:32');
+INSERT INTO `admin_operation_log` VALUES (907, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:30:32', '2020-05-21 02:30:32');
+INSERT INTO `admin_operation_log` VALUES (908, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:30:35', '2020-05-21 02:30:35');
+INSERT INTO `admin_operation_log` VALUES (909, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:30:35', '2020-05-21 02:30:35');
+INSERT INTO `admin_operation_log` VALUES (910, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:30:35', '2020-05-21 02:30:35');
+INSERT INTO `admin_operation_log` VALUES (911, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:30:53', '2020-05-21 02:30:53');
+INSERT INTO `admin_operation_log` VALUES (912, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:30:53', '2020-05-21 02:30:53');
+INSERT INTO `admin_operation_log` VALUES (913, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:30:53', '2020-05-21 02:30:53');
+INSERT INTO `admin_operation_log` VALUES (914, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:31:06', '2020-05-21 02:31:06');
+INSERT INTO `admin_operation_log` VALUES (915, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:31:08', '2020-05-21 02:31:08');
+INSERT INTO `admin_operation_log` VALUES (916, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:31:08', '2020-05-21 02:31:08');
+INSERT INTO `admin_operation_log` VALUES (917, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:31:40', '2020-05-21 02:31:40');
+INSERT INTO `admin_operation_log` VALUES (918, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:31:41', '2020-05-21 02:31:41');
+INSERT INTO `admin_operation_log` VALUES (919, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:31:41', '2020-05-21 02:31:41');
+INSERT INTO `admin_operation_log` VALUES (920, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:32:42', '2020-05-21 02:32:42');
+INSERT INTO `admin_operation_log` VALUES (921, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:32:42', '2020-05-21 02:32:42');
+INSERT INTO `admin_operation_log` VALUES (922, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:32:42', '2020-05-21 02:32:42');
+INSERT INTO `admin_operation_log` VALUES (923, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:32:50', '2020-05-21 02:32:50');
+INSERT INTO `admin_operation_log` VALUES (924, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:32:50', '2020-05-21 02:32:50');
+INSERT INTO `admin_operation_log` VALUES (925, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:32:50', '2020-05-21 02:32:50');
+INSERT INTO `admin_operation_log` VALUES (926, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:40:30', '2020-05-21 02:40:30');
+INSERT INTO `admin_operation_log` VALUES (927, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:40:30', '2020-05-21 02:40:30');
+INSERT INTO `admin_operation_log` VALUES (928, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:40:30', '2020-05-21 02:40:30');
+INSERT INTO `admin_operation_log` VALUES (929, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:40:51', '2020-05-21 02:40:51');
+INSERT INTO `admin_operation_log` VALUES (930, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:40:51', '2020-05-21 02:40:51');
+INSERT INTO `admin_operation_log` VALUES (931, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:40:51', '2020-05-21 02:40:51');
+INSERT INTO `admin_operation_log` VALUES (932, 2, 'merchant-admin', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:41:07', '2020-05-21 02:41:07');
+INSERT INTO `admin_operation_log` VALUES (933, 2, 'merchant-admin/dcat-api/value', 'POST', '127.0.0.1', '{\"_token\":\"JdrUJAofpgVhPGJS5gdDnw2JjoeCzVuD3T7KXKv1\",\"_key\":\"App\\\\MerchantAdmin\\\\Metrics\\\\Examples\\\\Tickets\"}', '2020-05-21 02:41:07', '2020-05-21 02:41:07');
+INSERT INTO `admin_operation_log` VALUES (934, 2, 'merchant-admin/dcat-api/value', 'POST', '127.0.0.1', '{\"_token\":\"JdrUJAofpgVhPGJS5gdDnw2JjoeCzVuD3T7KXKv1\",\"_key\":\"App\\\\MerchantAdmin\\\\Metrics\\\\Examples\\\\NewUsers\"}', '2020-05-21 02:41:07', '2020-05-21 02:41:07');
+INSERT INTO `admin_operation_log` VALUES (935, 2, 'merchant-admin/dcat-api/value', 'POST', '127.0.0.1', '{\"_token\":\"JdrUJAofpgVhPGJS5gdDnw2JjoeCzVuD3T7KXKv1\",\"_key\":\"App\\\\MerchantAdmin\\\\Metrics\\\\Examples\\\\Sessions\"}', '2020-05-21 02:41:07', '2020-05-21 02:41:07');
+INSERT INTO `admin_operation_log` VALUES (936, 2, 'merchant-admin/dcat-api/value', 'POST', '127.0.0.1', '{\"_token\":\"JdrUJAofpgVhPGJS5gdDnw2JjoeCzVuD3T7KXKv1\",\"_key\":\"App\\\\MerchantAdmin\\\\Metrics\\\\Examples\\\\ProductOrders\"}', '2020-05-21 02:41:07', '2020-05-21 02:41:07');
+INSERT INTO `admin_operation_log` VALUES (937, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:41:08', '2020-05-21 02:41:08');
+INSERT INTO `admin_operation_log` VALUES (938, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:41:08', '2020-05-21 02:41:08');
+INSERT INTO `admin_operation_log` VALUES (939, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:41:08', '2020-05-21 02:41:08');
+INSERT INTO `admin_operation_log` VALUES (940, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:41:30', '2020-05-21 02:41:30');
+INSERT INTO `admin_operation_log` VALUES (941, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:41:30', '2020-05-21 02:41:30');
+INSERT INTO `admin_operation_log` VALUES (942, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:41:30', '2020-05-21 02:41:30');
+INSERT INTO `admin_operation_log` VALUES (943, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:43:47', '2020-05-21 02:43:47');
+INSERT INTO `admin_operation_log` VALUES (944, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:43:47', '2020-05-21 02:43:47');
+INSERT INTO `admin_operation_log` VALUES (945, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:43:47', '2020-05-21 02:43:47');
+INSERT INTO `admin_operation_log` VALUES (946, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:43:48', '2020-05-21 02:43:48');
+INSERT INTO `admin_operation_log` VALUES (947, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:43:48', '2020-05-21 02:43:48');
+INSERT INTO `admin_operation_log` VALUES (948, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:43:48', '2020-05-21 02:43:48');
+INSERT INTO `admin_operation_log` VALUES (949, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:45:42', '2020-05-21 02:45:42');
+INSERT INTO `admin_operation_log` VALUES (950, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:45:42', '2020-05-21 02:45:42');
+INSERT INTO `admin_operation_log` VALUES (951, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:45:42', '2020-05-21 02:45:42');
+INSERT INTO `admin_operation_log` VALUES (952, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:45:43', '2020-05-21 02:45:43');
+INSERT INTO `admin_operation_log` VALUES (953, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:45:43', '2020-05-21 02:45:43');
+INSERT INTO `admin_operation_log` VALUES (954, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:45:43', '2020-05-21 02:45:43');
+INSERT INTO `admin_operation_log` VALUES (955, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:45:44', '2020-05-21 02:45:44');
+INSERT INTO `admin_operation_log` VALUES (956, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:45:44', '2020-05-21 02:45:44');
+INSERT INTO `admin_operation_log` VALUES (957, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:45:44', '2020-05-21 02:45:44');
+INSERT INTO `admin_operation_log` VALUES (958, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:47:02', '2020-05-21 02:47:02');
+INSERT INTO `admin_operation_log` VALUES (959, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:47:02', '2020-05-21 02:47:02');
+INSERT INTO `admin_operation_log` VALUES (960, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:47:02', '2020-05-21 02:47:02');
+INSERT INTO `admin_operation_log` VALUES (961, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:50:08', '2020-05-21 02:50:08');
+INSERT INTO `admin_operation_log` VALUES (962, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:50:09', '2020-05-21 02:50:09');
+INSERT INTO `admin_operation_log` VALUES (963, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:50:09', '2020-05-21 02:50:09');
+INSERT INTO `admin_operation_log` VALUES (964, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:50:10', '2020-05-21 02:50:10');
+INSERT INTO `admin_operation_log` VALUES (965, 2, 'merchant-admin/merchant/changeStatus', 'POST', '127.0.0.1', '{\"id\":2,\"site_title\":\"11\",\"merchant_id\":2,\"plat_id\":2,\"extra_json\":\"[{\\\"key\\\":\\\"admin_url\\\",\\\"value\\\":\\\"11\\\",\\\"desc\\\":\\\"\\\\u540e\\\\u53f0\\\\u767b\\\\u5f55\\\\u57df\\\\u540d\\\"},{\\\"key\\\":\\\"username\\\",\\\"value\\\":\\\"22\\\",\\\"desc\\\":\\\"\\\\u673a\\\\u5668\\\\u4eba\\\\u8d26\\\\u6237\\\"},{\\\"key\\\":\\\"password\\\",\\\"value\\\":\\\"11\\\",\\\"desc\\\":\\\"\\\\u673a\\\\u5668\\\\u4eba\\\\u5bc6\\\\u7801\\\"}]\",\"status\":0,\"online\":0,\"created_at\":\"2020-05-21 02:15:11\",\"updated_at\":\"2020-05-21 02:15:11\",\"plat\":{\"id\":2,\"name\":\"\\u4e2d\\u535a\",\"extra_json\":[{\"key\":\"admin_url\",\"value\":\"11\",\"desc\":\"\\u540e\\u53f0\\u767b\\u5f55\\u57df\\u540d\"},{\"key\":\"username\",\"value\":\"22\",\"desc\":\"\\u673a\\u5668\\u4eba\\u8d26\\u6237\"},{\"key\":\"password\",\"value\":\"11\",\"desc\":\"\\u673a\\u5668\\u4eba\\u5bc6\\u7801\"}],\"status\":1,\"created_at\":\"2020-05-20 22:01:42\",\"updated_at\":\"2020-05-21 00:44:51\"}}', '2020-05-21 02:51:26', '2020-05-21 02:51:26');
+INSERT INTO `admin_operation_log` VALUES (966, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:51:26', '2020-05-21 02:51:26');
+INSERT INTO `admin_operation_log` VALUES (967, 2, 'merchant-admin/merchant/changeStatus', 'POST', '127.0.0.1', '{\"id\":2,\"site_title\":\"11\",\"merchant_id\":2,\"plat_id\":2,\"extra_json\":\"[{\\\"key\\\":\\\"admin_url\\\",\\\"value\\\":\\\"11\\\",\\\"desc\\\":\\\"\\\\u540e\\\\u53f0\\\\u767b\\\\u5f55\\\\u57df\\\\u540d\\\"},{\\\"key\\\":\\\"username\\\",\\\"value\\\":\\\"22\\\",\\\"desc\\\":\\\"\\\\u673a\\\\u5668\\\\u4eba\\\\u8d26\\\\u6237\\\"},{\\\"key\\\":\\\"password\\\",\\\"value\\\":\\\"11\\\",\\\"desc\\\":\\\"\\\\u673a\\\\u5668\\\\u4eba\\\\u5bc6\\\\u7801\\\"}]\",\"status\":1,\"online\":0,\"created_at\":\"2020-05-21 02:51:26\",\"updated_at\":\"2020-05-21 02:51:26\",\"plat\":{\"id\":2,\"name\":\"\\u4e2d\\u535a\",\"extra_json\":[{\"key\":\"admin_url\",\"value\":\"11\",\"desc\":\"\\u540e\\u53f0\\u767b\\u5f55\\u57df\\u540d\"},{\"key\":\"username\",\"value\":\"22\",\"desc\":\"\\u673a\\u5668\\u4eba\\u8d26\\u6237\"},{\"key\":\"password\",\"value\":\"11\",\"desc\":\"\\u673a\\u5668\\u4eba\\u5bc6\\u7801\"}],\"status\":1,\"created_at\":\"2020-05-20 22:01:42\",\"updated_at\":\"2020-05-21 00:44:51\"}}', '2020-05-21 02:52:01', '2020-05-21 02:52:01');
+INSERT INTO `admin_operation_log` VALUES (968, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:52:02', '2020-05-21 02:52:02');
+INSERT INTO `admin_operation_log` VALUES (969, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:52:20', '2020-05-21 02:52:20');
+INSERT INTO `admin_operation_log` VALUES (970, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:52:21', '2020-05-21 02:52:21');
+INSERT INTO `admin_operation_log` VALUES (971, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:52:21', '2020-05-21 02:52:21');
+INSERT INTO `admin_operation_log` VALUES (972, 2, 'merchant-admin/merchant/changeStatus', 'POST', '127.0.0.1', '{\"id\":2,\"site_title\":\"11\",\"merchant_id\":2,\"plat_id\":2,\"extra_json\":\"[{\\\"key\\\":\\\"admin_url\\\",\\\"value\\\":\\\"11\\\",\\\"desc\\\":\\\"\\\\u540e\\\\u53f0\\\\u767b\\\\u5f55\\\\u57df\\\\u540d\\\"},{\\\"key\\\":\\\"username\\\",\\\"value\\\":\\\"22\\\",\\\"desc\\\":\\\"\\\\u673a\\\\u5668\\\\u4eba\\\\u8d26\\\\u6237\\\"},{\\\"key\\\":\\\"password\\\",\\\"value\\\":\\\"11\\\",\\\"desc\\\":\\\"\\\\u673a\\\\u5668\\\\u4eba\\\\u5bc6\\\\u7801\\\"}]\",\"status\":0,\"online\":0,\"created_at\":\"2020-05-21 02:52:02\",\"updated_at\":\"2020-05-21 02:52:02\",\"plat\":{\"id\":2,\"name\":\"\\u4e2d\\u535a\",\"extra_json\":[{\"key\":\"admin_url\",\"value\":\"11\",\"desc\":\"\\u540e\\u53f0\\u767b\\u5f55\\u57df\\u540d\"},{\"key\":\"username\",\"value\":\"22\",\"desc\":\"\\u673a\\u5668\\u4eba\\u8d26\\u6237\"},{\"key\":\"password\",\"value\":\"11\",\"desc\":\"\\u673a\\u5668\\u4eba\\u5bc6\\u7801\"}],\"status\":1,\"created_at\":\"2020-05-20 22:01:42\",\"updated_at\":\"2020-05-21 00:44:51\"}}', '2020-05-21 02:52:24', '2020-05-21 02:52:24');
+INSERT INTO `admin_operation_log` VALUES (973, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:52:24', '2020-05-21 02:52:24');
+INSERT INTO `admin_operation_log` VALUES (974, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:52:42', '2020-05-21 02:52:42');
+INSERT INTO `admin_operation_log` VALUES (975, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:52:42', '2020-05-21 02:52:42');
+INSERT INTO `admin_operation_log` VALUES (976, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:52:42', '2020-05-21 02:52:42');
+INSERT INTO `admin_operation_log` VALUES (977, 2, 'merchant-admin/merchant/changeStatus', 'POST', '127.0.0.1', '{\"id\":2,\"site_title\":\"11\",\"merchant_id\":2,\"plat_id\":2,\"extra_json\":\"[{\\\"key\\\":\\\"admin_url\\\",\\\"value\\\":\\\"11\\\",\\\"desc\\\":\\\"\\\\u540e\\\\u53f0\\\\u767b\\\\u5f55\\\\u57df\\\\u540d\\\"},{\\\"key\\\":\\\"username\\\",\\\"value\\\":\\\"22\\\",\\\"desc\\\":\\\"\\\\u673a\\\\u5668\\\\u4eba\\\\u8d26\\\\u6237\\\"},{\\\"key\\\":\\\"password\\\",\\\"value\\\":\\\"11\\\",\\\"desc\\\":\\\"\\\\u673a\\\\u5668\\\\u4eba\\\\u5bc6\\\\u7801\\\"}]\",\"status\":1,\"online\":0,\"created_at\":\"2020-05-21 02:52:24\",\"updated_at\":\"2020-05-21 02:52:24\",\"plat\":{\"id\":2,\"name\":\"\\u4e2d\\u535a\",\"extra_json\":[{\"key\":\"admin_url\",\"value\":\"11\",\"desc\":\"\\u540e\\u53f0\\u767b\\u5f55\\u57df\\u540d\"},{\"key\":\"username\",\"value\":\"22\",\"desc\":\"\\u673a\\u5668\\u4eba\\u8d26\\u6237\"},{\"key\":\"password\",\"value\":\"11\",\"desc\":\"\\u673a\\u5668\\u4eba\\u5bc6\\u7801\"}],\"status\":1,\"created_at\":\"2020-05-20 22:01:42\",\"updated_at\":\"2020-05-21 00:44:51\"}}', '2020-05-21 02:52:49', '2020-05-21 02:52:49');
+INSERT INTO `admin_operation_log` VALUES (978, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:52:49', '2020-05-21 02:52:49');
+INSERT INTO `admin_operation_log` VALUES (979, 2, 'merchant-admin/merchant/changeStatus', 'POST', '127.0.0.1', '{\"id\":2,\"site_title\":\"11\",\"merchant_id\":2,\"plat_id\":2,\"extra_json\":\"[{\\\"key\\\":\\\"admin_url\\\",\\\"value\\\":\\\"11\\\",\\\"desc\\\":\\\"\\\\u540e\\\\u53f0\\\\u767b\\\\u5f55\\\\u57df\\\\u540d\\\"},{\\\"key\\\":\\\"username\\\",\\\"value\\\":\\\"22\\\",\\\"desc\\\":\\\"\\\\u673a\\\\u5668\\\\u4eba\\\\u8d26\\\\u6237\\\"},{\\\"key\\\":\\\"password\\\",\\\"value\\\":\\\"11\\\",\\\"desc\\\":\\\"\\\\u673a\\\\u5668\\\\u4eba\\\\u5bc6\\\\u7801\\\"}]\",\"status\":0,\"online\":0,\"created_at\":\"2020-05-21 02:52:49\",\"updated_at\":\"2020-05-21 02:52:49\",\"plat\":{\"id\":2,\"name\":\"\\u4e2d\\u535a\",\"extra_json\":[{\"key\":\"admin_url\",\"value\":\"11\",\"desc\":\"\\u540e\\u53f0\\u767b\\u5f55\\u57df\\u540d\"},{\"key\":\"username\",\"value\":\"22\",\"desc\":\"\\u673a\\u5668\\u4eba\\u8d26\\u6237\"},{\"key\":\"password\",\"value\":\"11\",\"desc\":\"\\u673a\\u5668\\u4eba\\u5bc6\\u7801\"}],\"status\":1,\"created_at\":\"2020-05-20 22:01:42\",\"updated_at\":\"2020-05-21 00:44:51\"}}', '2020-05-21 02:52:51', '2020-05-21 02:52:51');
+INSERT INTO `admin_operation_log` VALUES (980, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:52:51', '2020-05-21 02:52:51');
+INSERT INTO `admin_operation_log` VALUES (981, 2, 'merchant-admin/merchant/changeStatus', 'POST', '127.0.0.1', '{\"id\":2,\"site_title\":\"11\",\"merchant_id\":2,\"plat_id\":2,\"extra_json\":\"[{\\\"key\\\":\\\"admin_url\\\",\\\"value\\\":\\\"11\\\",\\\"desc\\\":\\\"\\\\u540e\\\\u53f0\\\\u767b\\\\u5f55\\\\u57df\\\\u540d\\\"},{\\\"key\\\":\\\"username\\\",\\\"value\\\":\\\"22\\\",\\\"desc\\\":\\\"\\\\u673a\\\\u5668\\\\u4eba\\\\u8d26\\\\u6237\\\"},{\\\"key\\\":\\\"password\\\",\\\"value\\\":\\\"11\\\",\\\"desc\\\":\\\"\\\\u673a\\\\u5668\\\\u4eba\\\\u5bc6\\\\u7801\\\"}]\",\"status\":1,\"online\":0,\"created_at\":\"2020-05-21 02:52:51\",\"updated_at\":\"2020-05-21 02:52:51\",\"plat\":{\"id\":2,\"name\":\"\\u4e2d\\u535a\",\"extra_json\":[{\"key\":\"admin_url\",\"value\":\"11\",\"desc\":\"\\u540e\\u53f0\\u767b\\u5f55\\u57df\\u540d\"},{\"key\":\"username\",\"value\":\"22\",\"desc\":\"\\u673a\\u5668\\u4eba\\u8d26\\u6237\"},{\"key\":\"password\",\"value\":\"11\",\"desc\":\"\\u673a\\u5668\\u4eba\\u5bc6\\u7801\"}],\"status\":1,\"created_at\":\"2020-05-20 22:01:42\",\"updated_at\":\"2020-05-21 00:44:51\"}}', '2020-05-21 02:55:59', '2020-05-21 02:55:59');
+INSERT INTO `admin_operation_log` VALUES (982, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:55:59', '2020-05-21 02:55:59');
+INSERT INTO `admin_operation_log` VALUES (983, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:58:32', '2020-05-21 02:58:32');
+INSERT INTO `admin_operation_log` VALUES (984, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:58:33', '2020-05-21 02:58:33');
+INSERT INTO `admin_operation_log` VALUES (985, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:58:33', '2020-05-21 02:58:33');
+INSERT INTO `admin_operation_log` VALUES (986, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:58:33', '2020-05-21 02:58:33');
+INSERT INTO `admin_operation_log` VALUES (987, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:58:33', '2020-05-21 02:58:33');
+INSERT INTO `admin_operation_log` VALUES (988, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:58:33', '2020-05-21 02:58:33');
+INSERT INTO `admin_operation_log` VALUES (989, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 02:59:11', '2020-05-21 02:59:11');
+INSERT INTO `admin_operation_log` VALUES (990, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 02:59:11', '2020-05-21 02:59:11');
+INSERT INTO `admin_operation_log` VALUES (991, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:59:11', '2020-05-21 02:59:11');
+INSERT INTO `admin_operation_log` VALUES (992, 2, 'merchant-admin/merchant/changeStatus', 'POST', '127.0.0.1', '{\"id\":2,\"site_title\":\"11\",\"merchant_id\":2,\"plat_id\":2,\"extra_json\":\"[{\\\"key\\\":\\\"admin_url\\\",\\\"value\\\":\\\"11\\\",\\\"desc\\\":\\\"\\\\u540e\\\\u53f0\\\\u767b\\\\u5f55\\\\u57df\\\\u540d\\\"},{\\\"key\\\":\\\"username\\\",\\\"value\\\":\\\"22\\\",\\\"desc\\\":\\\"\\\\u673a\\\\u5668\\\\u4eba\\\\u8d26\\\\u6237\\\"},{\\\"key\\\":\\\"password\\\",\\\"value\\\":\\\"11\\\",\\\"desc\\\":\\\"\\\\u673a\\\\u5668\\\\u4eba\\\\u5bc6\\\\u7801\\\"}]\",\"status\":0,\"online\":0,\"created_at\":\"2020-05-21 02:55:59\",\"updated_at\":\"2020-05-21 02:55:59\",\"plat\":{\"id\":2,\"name\":\"\\u4e2d\\u535a\",\"extra_json\":[{\"key\":\"admin_url\",\"value\":\"11\",\"desc\":\"\\u540e\\u53f0\\u767b\\u5f55\\u57df\\u540d\"},{\"key\":\"username\",\"value\":\"22\",\"desc\":\"\\u673a\\u5668\\u4eba\\u8d26\\u6237\"},{\"key\":\"password\",\"value\":\"11\",\"desc\":\"\\u673a\\u5668\\u4eba\\u5bc6\\u7801\"}],\"status\":1,\"created_at\":\"2020-05-20 22:01:42\",\"updated_at\":\"2020-05-21 00:44:51\"}}', '2020-05-21 02:59:13', '2020-05-21 02:59:13');
+INSERT INTO `admin_operation_log` VALUES (993, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:59:13', '2020-05-21 02:59:13');
+INSERT INTO `admin_operation_log` VALUES (994, 2, 'merchant-admin/merchant/robotHandle', 'POST', '127.0.0.1', '{\"id\":2,\"site_title\":\"11\",\"merchant_id\":2,\"plat_id\":2,\"extra_json\":\"[{\\\"key\\\":\\\"admin_url\\\",\\\"value\\\":\\\"11\\\",\\\"desc\\\":\\\"\\\\u540e\\\\u53f0\\\\u767b\\\\u5f55\\\\u57df\\\\u540d\\\"},{\\\"key\\\":\\\"username\\\",\\\"value\\\":\\\"22\\\",\\\"desc\\\":\\\"\\\\u673a\\\\u5668\\\\u4eba\\\\u8d26\\\\u6237\\\"},{\\\"key\\\":\\\"password\\\",\\\"value\\\":\\\"11\\\",\\\"desc\\\":\\\"\\\\u673a\\\\u5668\\\\u4eba\\\\u5bc6\\\\u7801\\\"}]\",\"status\":1,\"online\":0,\"created_at\":\"2020-05-21 02:59:13\",\"updated_at\":\"2020-05-21 02:59:13\",\"plat\":{\"id\":2,\"name\":\"\\u4e2d\\u535a\",\"extra_json\":[{\"key\":\"admin_url\",\"value\":\"11\",\"desc\":\"\\u540e\\u53f0\\u767b\\u5f55\\u57df\\u540d\"},{\"key\":\"username\",\"value\":\"22\",\"desc\":\"\\u673a\\u5668\\u4eba\\u8d26\\u6237\"},{\"key\":\"password\",\"value\":\"11\",\"desc\":\"\\u673a\\u5668\\u4eba\\u5bc6\\u7801\"}],\"status\":1,\"created_at\":\"2020-05-20 22:01:42\",\"updated_at\":\"2020-05-21 00:44:51\"}}', '2020-05-21 02:59:16', '2020-05-21 02:59:16');
+INSERT INTO `admin_operation_log` VALUES (995, 2, 'merchant-admin/merchant/changeStatus', 'POST', '127.0.0.1', '{\"id\":2,\"site_title\":\"11\",\"merchant_id\":2,\"plat_id\":2,\"extra_json\":\"[{\\\"key\\\":\\\"admin_url\\\",\\\"value\\\":\\\"11\\\",\\\"desc\\\":\\\"\\\\u540e\\\\u53f0\\\\u767b\\\\u5f55\\\\u57df\\\\u540d\\\"},{\\\"key\\\":\\\"username\\\",\\\"value\\\":\\\"22\\\",\\\"desc\\\":\\\"\\\\u673a\\\\u5668\\\\u4eba\\\\u8d26\\\\u6237\\\"},{\\\"key\\\":\\\"password\\\",\\\"value\\\":\\\"11\\\",\\\"desc\\\":\\\"\\\\u673a\\\\u5668\\\\u4eba\\\\u5bc6\\\\u7801\\\"}]\",\"status\":1,\"online\":0,\"created_at\":\"2020-05-21 02:59:13\",\"updated_at\":\"2020-05-21 02:59:13\",\"plat\":{\"id\":2,\"name\":\"\\u4e2d\\u535a\",\"extra_json\":[{\"key\":\"admin_url\",\"value\":\"11\",\"desc\":\"\\u540e\\u53f0\\u767b\\u5f55\\u57df\\u540d\"},{\"key\":\"username\",\"value\":\"22\",\"desc\":\"\\u673a\\u5668\\u4eba\\u8d26\\u6237\"},{\"key\":\"password\",\"value\":\"11\",\"desc\":\"\\u673a\\u5668\\u4eba\\u5bc6\\u7801\"}],\"status\":1,\"created_at\":\"2020-05-20 22:01:42\",\"updated_at\":\"2020-05-21 00:44:51\"}}', '2020-05-21 02:59:17', '2020-05-21 02:59:17');
+INSERT INTO `admin_operation_log` VALUES (996, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:59:17', '2020-05-21 02:59:17');
+INSERT INTO `admin_operation_log` VALUES (997, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 02:59:59', '2020-05-21 02:59:59');
+INSERT INTO `admin_operation_log` VALUES (998, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:00:01', '2020-05-21 03:00:01');
+INSERT INTO `admin_operation_log` VALUES (999, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:00:01', '2020-05-21 03:00:01');
+INSERT INTO `admin_operation_log` VALUES (1000, 2, 'merchant-admin/merchant/delete/2', 'GET', '127.0.0.1', '[]', '2020-05-21 03:00:04', '2020-05-21 03:00:04');
+INSERT INTO `admin_operation_log` VALUES (1001, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:00:04', '2020-05-21 03:00:04');
+INSERT INTO `admin_operation_log` VALUES (1002, 2, 'merchant-admin/merchant-plats', 'POST', '127.0.0.1', '{\"site_title\":\"\\u4e03\\u661f\\u5f69\\u7247\",\"plat_id\":1,\"extra_json\":[{\"key\":\"api_url\",\"value\":\"11\",\"desc\":\"\\u5927\\u53d1\\u63a5\\u53e3\\u5730\\u5740\"},{\"key\":\"dafa_id\",\"value\":\"222\",\"desc\":\"\\u5927\\u53d1ID\"},{\"key\":\"dafa_secret\",\"value\":\"33\",\"desc\":\"\\u5927\\u53d1\\u5bc6\\u94a5\"}]}', '2020-05-21 03:00:20', '2020-05-21 03:00:20');
+INSERT INTO `admin_operation_log` VALUES (1003, 2, 'merchant-admin/merchant-plats', 'POST', '127.0.0.1', '{\"site_title\":\"\\u4e03\\u661f\\u5f69\\u7247\",\"plat_id\":1,\"extra_json\":[{\"key\":\"api_url\",\"value\":\"11\",\"desc\":\"\\u5927\\u53d1\\u63a5\\u53e3\\u5730\\u5740\"},{\"key\":\"dafa_id\",\"value\":\"222\",\"desc\":\"\\u5927\\u53d1ID\"},{\"key\":\"dafa_secret\",\"value\":\"33\",\"desc\":\"\\u5927\\u53d1\\u5bc6\\u94a5\"}]}', '2020-05-21 03:00:23', '2020-05-21 03:00:23');
+INSERT INTO `admin_operation_log` VALUES (1004, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 03:00:27', '2020-05-21 03:00:27');
+INSERT INTO `admin_operation_log` VALUES (1005, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:00:28', '2020-05-21 03:00:28');
+INSERT INTO `admin_operation_log` VALUES (1006, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:00:28', '2020-05-21 03:00:28');
+INSERT INTO `admin_operation_log` VALUES (1007, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 03:00:28', '2020-05-21 03:00:28');
+INSERT INTO `admin_operation_log` VALUES (1008, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:00:28', '2020-05-21 03:00:28');
+INSERT INTO `admin_operation_log` VALUES (1009, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:00:28', '2020-05-21 03:00:28');
+INSERT INTO `admin_operation_log` VALUES (1010, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 03:00:30', '2020-05-21 03:00:30');
+INSERT INTO `admin_operation_log` VALUES (1011, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:00:30', '2020-05-21 03:00:30');
+INSERT INTO `admin_operation_log` VALUES (1012, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:00:30', '2020-05-21 03:00:30');
+INSERT INTO `admin_operation_log` VALUES (1013, 2, 'merchant-admin/merchant-plats', 'POST', '127.0.0.1', '{\"site_title\":\"23213\",\"plat_id\":1,\"extra_json\":[{\"key\":\"api_url\",\"value\":\"11\",\"desc\":\"\\u5927\\u53d1\\u63a5\\u53e3\\u5730\\u5740\"},{\"key\":\"dafa_id\",\"value\":\"222\",\"desc\":\"\\u5927\\u53d1ID\"},{\"key\":\"dafa_secret\",\"value\":\"33\",\"desc\":\"\\u5927\\u53d1\\u5bc6\\u94a5\"}]}', '2020-05-21 03:00:58', '2020-05-21 03:00:58');
+INSERT INTO `admin_operation_log` VALUES (1014, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:01:12', '2020-05-21 03:01:12');
+INSERT INTO `admin_operation_log` VALUES (1015, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:01:13', '2020-05-21 03:01:13');
+INSERT INTO `admin_operation_log` VALUES (1016, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:01:13', '2020-05-21 03:01:13');
+INSERT INTO `admin_operation_log` VALUES (1017, 2, 'merchant-admin/merchant-plats', 'POST', '127.0.0.1', '{\"site_title\":\"111\",\"plat_id\":1,\"extra_json\":[{\"key\":\"api_url\",\"value\":\"11111\",\"desc\":\"\\u5927\\u53d1\\u63a5\\u53e3\\u5730\\u5740\"},{\"key\":\"dafa_id\",\"value\":\"22222\",\"desc\":\"\\u5927\\u53d1ID\"},{\"key\":\"dafa_secret\",\"value\":\"3311\",\"desc\":\"\\u5927\\u53d1\\u5bc6\\u94a5\"}]}', '2020-05-21 03:01:37', '2020-05-21 03:01:37');
+INSERT INTO `admin_operation_log` VALUES (1018, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:01:37', '2020-05-21 03:01:37');
+INSERT INTO `admin_operation_log` VALUES (1019, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:01:57', '2020-05-21 03:01:57');
+INSERT INTO `admin_operation_log` VALUES (1020, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:01:57', '2020-05-21 03:01:57');
+INSERT INTO `admin_operation_log` VALUES (1021, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:01:57', '2020-05-21 03:01:57');
+INSERT INTO `admin_operation_log` VALUES (1022, 2, 'merchant-admin/merchant-plats', 'POST', '127.0.0.1', '{\"site_title\":\"3123\",\"plat_id\":2,\"extra_json\":[{\"key\":\"admin_url\",\"value\":\"11\",\"desc\":\"\\u540e\\u53f0\\u767b\\u5f55\\u57df\\u540d\"},{\"key\":\"username\",\"value\":\"22\",\"desc\":\"\\u673a\\u5668\\u4eba\\u8d26\\u6237\"},{\"key\":\"password\",\"value\":\"11\",\"desc\":\"\\u673a\\u5668\\u4eba\\u5bc6\\u7801\"}]}', '2020-05-21 03:02:03', '2020-05-21 03:02:03');
+INSERT INTO `admin_operation_log` VALUES (1023, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:02:03', '2020-05-21 03:02:03');
+INSERT INTO `admin_operation_log` VALUES (1024, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:04:24', '2020-05-21 03:04:24');
+INSERT INTO `admin_operation_log` VALUES (1025, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:04:25', '2020-05-21 03:04:25');
+INSERT INTO `admin_operation_log` VALUES (1026, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:04:25', '2020-05-21 03:04:25');
+INSERT INTO `admin_operation_log` VALUES (1027, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:04:29', '2020-05-21 03:04:29');
+INSERT INTO `admin_operation_log` VALUES (1028, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:04:30', '2020-05-21 03:04:30');
+INSERT INTO `admin_operation_log` VALUES (1029, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:04:30', '2020-05-21 03:04:30');
+INSERT INTO `admin_operation_log` VALUES (1030, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:06:14', '2020-05-21 03:06:14');
+INSERT INTO `admin_operation_log` VALUES (1031, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:06:15', '2020-05-21 03:06:15');
+INSERT INTO `admin_operation_log` VALUES (1032, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:06:15', '2020-05-21 03:06:15');
+INSERT INTO `admin_operation_log` VALUES (1033, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:06:41', '2020-05-21 03:06:41');
+INSERT INTO `admin_operation_log` VALUES (1034, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:06:41', '2020-05-21 03:06:41');
+INSERT INTO `admin_operation_log` VALUES (1035, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:06:41', '2020-05-21 03:06:41');
+INSERT INTO `admin_operation_log` VALUES (1036, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:06:50', '2020-05-21 03:06:50');
+INSERT INTO `admin_operation_log` VALUES (1037, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:06:51', '2020-05-21 03:06:51');
+INSERT INTO `admin_operation_log` VALUES (1038, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:06:51', '2020-05-21 03:06:51');
+INSERT INTO `admin_operation_log` VALUES (1039, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:07:32', '2020-05-21 03:07:32');
+INSERT INTO `admin_operation_log` VALUES (1040, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:07:32', '2020-05-21 03:07:32');
+INSERT INTO `admin_operation_log` VALUES (1041, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:07:32', '2020-05-21 03:07:32');
+INSERT INTO `admin_operation_log` VALUES (1042, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 03:08:51', '2020-05-21 03:08:51');
+INSERT INTO `admin_operation_log` VALUES (1043, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:08:51', '2020-05-21 03:08:51');
+INSERT INTO `admin_operation_log` VALUES (1044, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:08:51', '2020-05-21 03:08:51');
+INSERT INTO `admin_operation_log` VALUES (1045, 2, 'merchant-admin/merchant/changeStatus', 'POST', '127.0.0.1', '{\"id\":3,\"site_title\":\"\\u4e03\\u661f\\u5f69\\u7247\",\"merchant_id\":2,\"plat_id\":1,\"extra_json\":\"[{\\\"key\\\":\\\"api_url\\\",\\\"value\\\":\\\"11\\\",\\\"desc\\\":\\\"\\\\u5927\\\\u53d1\\\\u63a5\\\\u53e3\\\\u5730\\\\u5740\\\"},{\\\"key\\\":\\\"dafa_id\\\",\\\"value\\\":\\\"222\\\",\\\"desc\\\":\\\"\\\\u5927\\\\u53d1ID\\\"},{\\\"key\\\":\\\"dafa_secret\\\",\\\"value\\\":\\\"33\\\",\\\"desc\\\":\\\"\\\\u5927\\\\u53d1\\\\u5bc6\\\\u94a5\\\"}]\",\"status\":0,\"online\":0,\"created_at\":\"2020-05-21 03:00:20\",\"updated_at\":\"2020-05-21 03:00:20\",\"plat\":{\"id\":1,\"name\":\"\\u5927\\u53d1\",\"extra_json\":[{\"key\":\"api_url\",\"value\":\"11\",\"desc\":\"\\u5927\\u53d1\\u63a5\\u53e3\\u5730\\u5740\"},{\"key\":\"dafa_id\",\"value\":\"222\",\"desc\":\"\\u5927\\u53d1ID\"},{\"key\":\"dafa_secret\",\"value\":\"33\",\"desc\":\"\\u5927\\u53d1\\u5bc6\\u94a5\"}],\"status\":1,\"created_at\":\"2020-05-20 22:00:48\",\"updated_at\":\"2020-05-21 00:44:40\"}}', '2020-05-21 03:08:57', '2020-05-21 03:08:57');
+INSERT INTO `admin_operation_log` VALUES (1046, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:08:57', '2020-05-21 03:08:57');
+INSERT INTO `admin_operation_log` VALUES (1047, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 03:09:03', '2020-05-21 03:09:03');
+INSERT INTO `admin_operation_log` VALUES (1048, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:09:03', '2020-05-21 03:09:03');
+INSERT INTO `admin_operation_log` VALUES (1049, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:09:03', '2020-05-21 03:09:03');
+INSERT INTO `admin_operation_log` VALUES (1050, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 03:09:16', '2020-05-21 03:09:16');
+INSERT INTO `admin_operation_log` VALUES (1051, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:09:16', '2020-05-21 03:09:16');
+INSERT INTO `admin_operation_log` VALUES (1052, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:09:16', '2020-05-21 03:09:16');
+INSERT INTO `admin_operation_log` VALUES (1053, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:11:12', '2020-05-21 03:11:12');
+INSERT INTO `admin_operation_log` VALUES (1054, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:11:13', '2020-05-21 03:11:13');
+INSERT INTO `admin_operation_log` VALUES (1055, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:11:13', '2020-05-21 03:11:13');
+INSERT INTO `admin_operation_log` VALUES (1056, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:12:03', '2020-05-21 03:12:03');
+INSERT INTO `admin_operation_log` VALUES (1057, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:12:03', '2020-05-21 03:12:03');
+INSERT INTO `admin_operation_log` VALUES (1058, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:12:03', '2020-05-21 03:12:03');
+INSERT INTO `admin_operation_log` VALUES (1059, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:12:30', '2020-05-21 03:12:30');
+INSERT INTO `admin_operation_log` VALUES (1060, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:12:31', '2020-05-21 03:12:31');
+INSERT INTO `admin_operation_log` VALUES (1061, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:12:31', '2020-05-21 03:12:31');
+INSERT INTO `admin_operation_log` VALUES (1062, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:13:35', '2020-05-21 03:13:35');
+INSERT INTO `admin_operation_log` VALUES (1063, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:13:36', '2020-05-21 03:13:36');
+INSERT INTO `admin_operation_log` VALUES (1064, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:13:36', '2020-05-21 03:13:36');
+INSERT INTO `admin_operation_log` VALUES (1065, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 03:14:07', '2020-05-21 03:14:07');
+INSERT INTO `admin_operation_log` VALUES (1066, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:14:08', '2020-05-21 03:14:08');
+INSERT INTO `admin_operation_log` VALUES (1067, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:14:08', '2020-05-21 03:14:08');
+INSERT INTO `admin_operation_log` VALUES (1068, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:14:32', '2020-05-21 03:14:32');
+INSERT INTO `admin_operation_log` VALUES (1069, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:14:33', '2020-05-21 03:14:33');
+INSERT INTO `admin_operation_log` VALUES (1070, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:14:33', '2020-05-21 03:14:33');
+INSERT INTO `admin_operation_log` VALUES (1071, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:15:10', '2020-05-21 03:15:10');
+INSERT INTO `admin_operation_log` VALUES (1072, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:15:11', '2020-05-21 03:15:11');
+INSERT INTO `admin_operation_log` VALUES (1073, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:15:11', '2020-05-21 03:15:11');
+INSERT INTO `admin_operation_log` VALUES (1074, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 03:15:20', '2020-05-21 03:15:20');
+INSERT INTO `admin_operation_log` VALUES (1075, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:15:21', '2020-05-21 03:15:21');
+INSERT INTO `admin_operation_log` VALUES (1076, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:15:21', '2020-05-21 03:15:21');
+INSERT INTO `admin_operation_log` VALUES (1077, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:16:39', '2020-05-21 03:16:39');
+INSERT INTO `admin_operation_log` VALUES (1078, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:16:40', '2020-05-21 03:16:40');
+INSERT INTO `admin_operation_log` VALUES (1079, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:16:40', '2020-05-21 03:16:40');
+INSERT INTO `admin_operation_log` VALUES (1080, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:18:02', '2020-05-21 03:18:02');
+INSERT INTO `admin_operation_log` VALUES (1081, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:18:03', '2020-05-21 03:18:03');
+INSERT INTO `admin_operation_log` VALUES (1082, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:18:03', '2020-05-21 03:18:03');
+INSERT INTO `admin_operation_log` VALUES (1083, 2, 'merchant-admin/merchant-plats', 'POST', '127.0.0.1', '{\"id\":7,\"site_title\":\"hahahh\",\"plat_id\":2,\"extra_json\":[{\"key\":\"admin_url\",\"value\":\"11\",\"desc\":\"\\u540e\\u53f0\\u767b\\u5f55\\u57df\\u540d\"},{\"key\":\"username\",\"value\":\"22\",\"desc\":\"\\u673a\\u5668\\u4eba\\u8d26\\u6237\"},{\"key\":\"password\",\"value\":\"11\",\"desc\":\"\\u673a\\u5668\\u4eba\\u5bc6\\u7801\"}]}', '2020-05-21 03:19:31', '2020-05-21 03:19:31');
+INSERT INTO `admin_operation_log` VALUES (1084, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:19:31', '2020-05-21 03:19:31');
+INSERT INTO `admin_operation_log` VALUES (1085, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:19:36', '2020-05-21 03:19:36');
+INSERT INTO `admin_operation_log` VALUES (1086, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:19:37', '2020-05-21 03:19:37');
+INSERT INTO `admin_operation_log` VALUES (1087, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:19:37', '2020-05-21 03:19:37');
+INSERT INTO `admin_operation_log` VALUES (1088, 2, 'merchant-admin/merchant-plats', 'POST', '127.0.0.1', '{\"id\":5,\"site_title\":\"312312323\",\"plat_id\":1,\"extra_json\":[{\"key\":\"api_url\",\"value\":\"11\",\"desc\":\"\\u5927\\u53d1\\u63a5\\u53e3\\u5730\\u5740\"},{\"key\":\"dafa_id\",\"value\":\"222\",\"desc\":\"\\u5927\\u53d1ID\"},{\"key\":\"dafa_secret\",\"value\":\"33\",\"desc\":\"\\u5927\\u53d1\\u5bc6\\u94a5\"}]}', '2020-05-21 03:19:53', '2020-05-21 03:19:53');
+INSERT INTO `admin_operation_log` VALUES (1089, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:19:53', '2020-05-21 03:19:53');
+INSERT INTO `admin_operation_log` VALUES (1090, 2, 'merchant-admin/merchant-plats', 'POST', '127.0.0.1', '{\"id\":5,\"site_title\":\"6666666\",\"plat_id\":1,\"extra_json\":[{\"key\":\"api_url\",\"value\":\"11\",\"desc\":\"\\u5927\\u53d1\\u63a5\\u53e3\\u5730\\u5740\"},{\"key\":\"dafa_id\",\"value\":\"222\",\"desc\":\"\\u5927\\u53d1ID\"},{\"key\":\"dafa_secret\",\"value\":\"33\",\"desc\":\"\\u5927\\u53d1\\u5bc6\\u94a5\"}]}', '2020-05-21 03:20:16', '2020-05-21 03:20:16');
+INSERT INTO `admin_operation_log` VALUES (1091, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:20:16', '2020-05-21 03:20:16');
+INSERT INTO `admin_operation_log` VALUES (1092, 2, 'merchant-admin/merchant-plats', 'POST', '127.0.0.1', '{\"id\":5,\"site_title\":\"22222\",\"plat_id\":1,\"extra_json\":[{\"key\":\"api_url\",\"value\":\"11\",\"desc\":\"\\u5927\\u53d1\\u63a5\\u53e3\\u5730\\u5740\"},{\"key\":\"dafa_id\",\"value\":\"222\",\"desc\":\"\\u5927\\u53d1ID\"},{\"key\":\"dafa_secret\",\"value\":\"33\",\"desc\":\"\\u5927\\u53d1\\u5bc6\\u94a5\"}]}', '2020-05-21 03:20:31', '2020-05-21 03:20:31');
+INSERT INTO `admin_operation_log` VALUES (1093, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:20:31', '2020-05-21 03:20:31');
+INSERT INTO `admin_operation_log` VALUES (1094, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:21:15', '2020-05-21 03:21:15');
+INSERT INTO `admin_operation_log` VALUES (1095, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:21:16', '2020-05-21 03:21:16');
+INSERT INTO `admin_operation_log` VALUES (1096, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:21:16', '2020-05-21 03:21:16');
+INSERT INTO `admin_operation_log` VALUES (1097, 2, 'merchant-admin/merchant-plats', 'POST', '127.0.0.1', '{\"id\":5,\"site_title\":\"\\u7231\\u4f60\",\"plat_id\":1,\"extra_json\":[{\"key\":\"api_url\",\"value\":\"11\",\"desc\":\"\\u5927\\u53d1\\u63a5\\u53e3\\u5730\\u5740\"},{\"key\":\"dafa_id\",\"value\":\"222\",\"desc\":\"\\u5927\\u53d1ID\"},{\"key\":\"dafa_secret\",\"value\":\"33\",\"desc\":\"\\u5927\\u53d1\\u5bc6\\u94a5\"}]}', '2020-05-21 03:21:26', '2020-05-21 03:21:26');
+INSERT INTO `admin_operation_log` VALUES (1098, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:21:26', '2020-05-21 03:21:26');
+INSERT INTO `admin_operation_log` VALUES (1099, 2, 'merchant-admin/merchant-plats', 'POST', '127.0.0.1', '{\"id\":6,\"site_title\":\"222\",\"plat_id\":1,\"extra_json\":[{\"key\":\"api_url\",\"value\":\"11111\",\"desc\":\"\\u5927\\u53d1\\u63a5\\u53e3\\u5730\\u5740\"},{\"key\":\"dafa_id\",\"value\":\"22222\",\"desc\":\"\\u5927\\u53d1ID\"},{\"key\":\"dafa_secret\",\"value\":\"3311\",\"desc\":\"\\u5927\\u53d1\\u5bc6\\u94a5\"}]}', '2020-05-21 03:21:53', '2020-05-21 03:21:53');
+INSERT INTO `admin_operation_log` VALUES (1100, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:21:54', '2020-05-21 03:21:54');
+INSERT INTO `admin_operation_log` VALUES (1101, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:22:15', '2020-05-21 03:22:15');
+INSERT INTO `admin_operation_log` VALUES (1102, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:22:16', '2020-05-21 03:22:16');
+INSERT INTO `admin_operation_log` VALUES (1103, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:22:16', '2020-05-21 03:22:16');
+INSERT INTO `admin_operation_log` VALUES (1104, 2, 'merchant-admin/merchant/delete/6', 'GET', '127.0.0.1', '[]', '2020-05-21 03:22:27', '2020-05-21 03:22:27');
+INSERT INTO `admin_operation_log` VALUES (1105, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:22:27', '2020-05-21 03:22:27');
+INSERT INTO `admin_operation_log` VALUES (1106, 2, 'merchant-admin/merchant/delete/7', 'GET', '127.0.0.1', '[]', '2020-05-21 03:22:28', '2020-05-21 03:22:28');
+INSERT INTO `admin_operation_log` VALUES (1107, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:22:28', '2020-05-21 03:22:28');
+INSERT INTO `admin_operation_log` VALUES (1108, 2, 'merchant-admin/merchant/delete/8', 'GET', '127.0.0.1', '[]', '2020-05-21 03:22:28', '2020-05-21 03:22:28');
+INSERT INTO `admin_operation_log` VALUES (1109, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:22:28', '2020-05-21 03:22:28');
+INSERT INTO `admin_operation_log` VALUES (1110, 2, 'merchant-admin/merchant/delete/9', 'GET', '127.0.0.1', '[]', '2020-05-21 03:22:29', '2020-05-21 03:22:29');
+INSERT INTO `admin_operation_log` VALUES (1111, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:22:29', '2020-05-21 03:22:29');
+INSERT INTO `admin_operation_log` VALUES (1112, 2, 'merchant-admin/merchant/delete/10', 'GET', '127.0.0.1', '[]', '2020-05-21 03:22:30', '2020-05-21 03:22:30');
+INSERT INTO `admin_operation_log` VALUES (1113, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:22:30', '2020-05-21 03:22:30');
+INSERT INTO `admin_operation_log` VALUES (1114, 2, 'merchant-admin/merchant/delete/5', 'GET', '127.0.0.1', '[]', '2020-05-21 03:22:31', '2020-05-21 03:22:31');
+INSERT INTO `admin_operation_log` VALUES (1115, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:22:31', '2020-05-21 03:22:31');
+INSERT INTO `admin_operation_log` VALUES (1116, 2, 'merchant-admin/merchant/delete/11', 'GET', '127.0.0.1', '[]', '2020-05-21 03:22:33', '2020-05-21 03:22:33');
+INSERT INTO `admin_operation_log` VALUES (1117, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:22:33', '2020-05-21 03:22:33');
+INSERT INTO `admin_operation_log` VALUES (1118, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:22:35', '2020-05-21 03:22:35');
+INSERT INTO `admin_operation_log` VALUES (1119, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:22:36', '2020-05-21 03:22:36');
+INSERT INTO `admin_operation_log` VALUES (1120, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:22:36', '2020-05-21 03:22:36');
+INSERT INTO `admin_operation_log` VALUES (1121, 2, 'merchant-admin/merchant-plats', 'POST', '127.0.0.1', '{\"id\":12,\"site_title\":\"\\u7231\\u4f602\",\"plat_id\":1,\"extra_json\":[{\"key\":\"api_url\",\"value\":\"11\",\"desc\":\"\\u5927\\u53d1\\u63a5\\u53e3\\u5730\\u5740\"},{\"key\":\"dafa_id\",\"value\":\"222\",\"desc\":\"\\u5927\\u53d1ID\"},{\"key\":\"dafa_secret\",\"value\":\"33\",\"desc\":\"\\u5927\\u53d1\\u5bc6\\u94a5\"}]}', '2020-05-21 03:22:41', '2020-05-21 03:22:41');
+INSERT INTO `admin_operation_log` VALUES (1122, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:22:41', '2020-05-21 03:22:41');
+INSERT INTO `admin_operation_log` VALUES (1123, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 03:22:54', '2020-05-21 03:22:54');
+INSERT INTO `admin_operation_log` VALUES (1124, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:22:54', '2020-05-21 03:22:54');
+INSERT INTO `admin_operation_log` VALUES (1125, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:22:54', '2020-05-21 03:22:54');
+INSERT INTO `admin_operation_log` VALUES (1126, 2, 'merchant-admin/merchant/delete/14', 'GET', '127.0.0.1', '[]', '2020-05-21 03:22:57', '2020-05-21 03:22:57');
+INSERT INTO `admin_operation_log` VALUES (1127, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:22:57', '2020-05-21 03:22:57');
+INSERT INTO `admin_operation_log` VALUES (1128, 2, 'merchant-admin/merchant-plats', 'POST', '127.0.0.1', '{\"id\":13,\"site_title\":\"\\u5475\\u5475\\u5475\",\"plat_id\":1,\"extra_json\":[{\"key\":\"api_url\",\"value\":\"11111\",\"desc\":\"\\u5927\\u53d1\\u63a5\\u53e3\\u5730\\u5740\"},{\"key\":\"dafa_id\",\"value\":\"22222\",\"desc\":\"\\u5927\\u53d1ID\"},{\"key\":\"dafa_secret\",\"value\":\"3311\",\"desc\":\"\\u5927\\u53d1\\u5bc6\\u94a5\"}]}', '2020-05-21 03:23:01', '2020-05-21 03:23:01');
+INSERT INTO `admin_operation_log` VALUES (1129, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:23:01', '2020-05-21 03:23:01');
+INSERT INTO `admin_operation_log` VALUES (1130, 2, 'merchant-admin/merchant-plats', 'POST', '127.0.0.1', '{\"id\":13,\"site_title\":\"\\u5475\\u5475\\u5475\",\"plat_id\":1,\"extra_json\":[{\"key\":\"api_url\",\"value\":\"2312312313231\",\"desc\":\"\\u5927\\u53d1\\u63a5\\u53e3\\u5730\\u5740\"},{\"key\":\"dafa_id\",\"value\":\"222231213\",\"desc\":\"\\u5927\\u53d1ID\"},{\"key\":\"dafa_secret\",\"value\":\"11323123123123\",\"desc\":\"\\u5927\\u53d1\\u5bc6\\u94a5\"}]}', '2020-05-21 03:23:11', '2020-05-21 03:23:11');
+INSERT INTO `admin_operation_log` VALUES (1131, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:23:11', '2020-05-21 03:23:11');
+INSERT INTO `admin_operation_log` VALUES (1132, 2, 'merchant-admin/merchant-plats', 'POST', '127.0.0.1', '{\"id\":12,\"site_title\":\"\\u7231\\u4f60\",\"plat_id\":1,\"extra_json\":[{\"key\":\"api_url\",\"value\":\"11111\",\"desc\":\"\\u5927\\u53d1\\u63a5\\u53e3\\u5730\\u5740\"},{\"key\":\"dafa_id\",\"value\":\"222111\",\"desc\":\"\\u5927\\u53d1ID\"},{\"key\":\"dafa_secret\",\"value\":\"33333\",\"desc\":\"\\u5927\\u53d1\\u5bc6\\u94a5\"}]}', '2020-05-21 03:23:21', '2020-05-21 03:23:21');
+INSERT INTO `admin_operation_log` VALUES (1133, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:23:21', '2020-05-21 03:23:21');
+INSERT INTO `admin_operation_log` VALUES (1134, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 03:24:36', '2020-05-21 03:24:36');
+INSERT INTO `admin_operation_log` VALUES (1135, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:24:36', '2020-05-21 03:24:36');
+INSERT INTO `admin_operation_log` VALUES (1136, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:24:36', '2020-05-21 03:24:36');
+INSERT INTO `admin_operation_log` VALUES (1137, 2, 'merchant-admin/merchant-plats', 'POST', '127.0.0.1', '{\"id\":null,\"site_title\":\"\\u56db\\u65b9\\u53d1\\u8d22\",\"plat_id\":1,\"extra_json\":[{\"key\":\"api_url\",\"value\":\"http:www.hdd\",\"desc\":\"\\u5927\\u53d1\\u63a5\\u53e3\\u5730\\u5740\"},{\"key\":\"dafa_id\",\"value\":\"222\",\"desc\":\"\\u5927\\u53d1ID\"},{\"key\":\"dafa_secret\",\"value\":\"33\",\"desc\":\"\\u5927\\u53d1\\u5bc6\\u94a5\"}]}', '2020-05-21 03:24:53', '2020-05-21 03:24:53');
+INSERT INTO `admin_operation_log` VALUES (1138, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:24:53', '2020-05-21 03:24:53');
+INSERT INTO `admin_operation_log` VALUES (1139, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 03:24:56', '2020-05-21 03:24:56');
+INSERT INTO `admin_operation_log` VALUES (1140, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:24:56', '2020-05-21 03:24:56');
+INSERT INTO `admin_operation_log` VALUES (1141, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:24:56', '2020-05-21 03:24:56');
+INSERT INTO `admin_operation_log` VALUES (1142, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 03:25:26', '2020-05-21 03:25:26');
+INSERT INTO `admin_operation_log` VALUES (1143, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:25:26', '2020-05-21 03:25:26');
+INSERT INTO `admin_operation_log` VALUES (1144, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:25:26', '2020-05-21 03:25:26');
+INSERT INTO `admin_operation_log` VALUES (1145, 2, 'merchant-admin/merchant/delete/15', 'GET', '127.0.0.1', '[]', '2020-05-21 03:25:39', '2020-05-21 03:25:39');
+INSERT INTO `admin_operation_log` VALUES (1146, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:25:39', '2020-05-21 03:25:39');
+INSERT INTO `admin_operation_log` VALUES (1147, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 03:25:42', '2020-05-21 03:25:42');
+INSERT INTO `admin_operation_log` VALUES (1148, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:25:42', '2020-05-21 03:25:42');
+INSERT INTO `admin_operation_log` VALUES (1149, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:25:42', '2020-05-21 03:25:42');
+INSERT INTO `admin_operation_log` VALUES (1150, 2, 'merchant-admin', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 03:25:59', '2020-05-21 03:25:59');
+INSERT INTO `admin_operation_log` VALUES (1151, 2, 'merchant-admin/dcat-api/value', 'POST', '127.0.0.1', '{\"_token\":\"JdrUJAofpgVhPGJS5gdDnw2JjoeCzVuD3T7KXKv1\",\"_key\":\"App\\\\MerchantAdmin\\\\Metrics\\\\Examples\\\\Tickets\"}', '2020-05-21 03:25:59', '2020-05-21 03:25:59');
+INSERT INTO `admin_operation_log` VALUES (1152, 2, 'merchant-admin/dcat-api/value', 'POST', '127.0.0.1', '{\"_token\":\"JdrUJAofpgVhPGJS5gdDnw2JjoeCzVuD3T7KXKv1\",\"_key\":\"App\\\\MerchantAdmin\\\\Metrics\\\\Examples\\\\NewUsers\"}', '2020-05-21 03:25:59', '2020-05-21 03:25:59');
+INSERT INTO `admin_operation_log` VALUES (1153, 2, 'merchant-admin/dcat-api/value', 'POST', '127.0.0.1', '{\"_token\":\"JdrUJAofpgVhPGJS5gdDnw2JjoeCzVuD3T7KXKv1\",\"_key\":\"App\\\\MerchantAdmin\\\\Metrics\\\\Examples\\\\Sessions\"}', '2020-05-21 03:25:59', '2020-05-21 03:25:59');
+INSERT INTO `admin_operation_log` VALUES (1154, 2, 'merchant-admin/dcat-api/value', 'POST', '127.0.0.1', '{\"_token\":\"JdrUJAofpgVhPGJS5gdDnw2JjoeCzVuD3T7KXKv1\",\"_key\":\"App\\\\MerchantAdmin\\\\Metrics\\\\Examples\\\\ProductOrders\"}', '2020-05-21 03:25:59', '2020-05-21 03:25:59');
+INSERT INTO `admin_operation_log` VALUES (1155, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 03:26:00', '2020-05-21 03:26:00');
+INSERT INTO `admin_operation_log` VALUES (1156, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:26:00', '2020-05-21 03:26:00');
+INSERT INTO `admin_operation_log` VALUES (1157, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:26:00', '2020-05-21 03:26:00');
+INSERT INTO `admin_operation_log` VALUES (1158, 2, 'merchant-admin/merchant-plats', 'GET', '127.0.0.1', '{\"_pjax\":\"#pjax-container\"}', '2020-05-21 03:26:10', '2020-05-21 03:26:10');
+INSERT INTO `admin_operation_log` VALUES (1159, 2, 'merchant-admin/plat_list', 'GET', '127.0.0.1', '[]', '2020-05-21 03:26:10', '2020-05-21 03:26:10');
+INSERT INTO `admin_operation_log` VALUES (1160, 2, 'merchant-admin/merchant/plats', 'GET', '127.0.0.1', '[]', '2020-05-21 03:26:10', '2020-05-21 03:26:10');
 COMMIT;
 
 -- ----------------------------
@@ -647,6 +1279,13 @@ CREATE TABLE `admin_permission_menu` (
   `updated_at` timestamp NULL DEFAULT NULL,
   UNIQUE KEY `admin_permission_menu_permission_id_menu_id_unique` (`permission_id`,`menu_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- ----------------------------
+-- Records of admin_permission_menu
+-- ----------------------------
+BEGIN;
+INSERT INTO `admin_permission_menu` VALUES (9, 19, NULL, NULL);
+COMMIT;
 
 -- ----------------------------
 -- Table structure for admin_permissions
@@ -664,7 +1303,7 @@ CREATE TABLE `admin_permissions` (
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `admin_permissions_slug_unique` (`slug`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- ----------------------------
 -- Records of admin_permissions
@@ -676,6 +1315,12 @@ INSERT INTO `admin_permissions` VALUES (3, 'Roles', 'roles', '', '/auth/roles*',
 INSERT INTO `admin_permissions` VALUES (4, 'Permissions', 'permissions', '', '/auth/permissions*', 4, 1, '2020-05-15 18:39:24', NULL);
 INSERT INTO `admin_permissions` VALUES (5, 'Menu', 'menu', '', '/auth/menu*', 5, 1, '2020-05-15 18:39:24', NULL);
 INSERT INTO `admin_permissions` VALUES (6, 'Operation log', 'operation-log', '', '/auth/logs*', 6, 1, '2020-05-15 18:39:24', NULL);
+INSERT INTO `admin_permissions` VALUES (7, '商户管理', 'merchant', '', '/adminUser,/adminUser/create,/adminUser/*,/adminUser/*/edit', 7, 0, '2020-05-20 20:36:10', '2020-05-20 20:36:57');
+INSERT INTO `admin_permissions` VALUES (8, '码商管理', 'server-manage', '', '/server,/server/create,/server/*,/server/*/edit', 8, 0, '2020-05-20 20:37:33', '2020-05-20 20:37:33');
+INSERT INTO `admin_permissions` VALUES (9, '接入平台管理', 'plats', '', '/plats,/plats/create,/plats/*,/plats/*/edit', 9, 0, '2020-05-20 22:03:52', '2020-05-20 22:03:52');
+INSERT INTO `admin_permissions` VALUES (11, '我的平台', 'merchant-list', '', '/merchant-plats,/merchant-plats/create,/merchant-plats/*,/merchant-plats/*/edit', 10, 0, '2020-05-20 22:13:47', '2020-05-20 22:13:47');
+INSERT INTO `admin_permissions` VALUES (12, '获取接入平台列表', 'plat-list', 'GET', '/plat_list', 11, 0, '2020-05-21 00:12:24', '2020-05-21 00:17:24');
+INSERT INTO `admin_permissions` VALUES (13, '商户接口', 'merchant-api', '', '/merchant/*', 12, 0, '2020-05-21 02:22:30', '2020-05-21 02:22:30');
 COMMIT;
 
 -- ----------------------------
@@ -720,6 +1365,23 @@ CREATE TABLE `admin_role_permissions` (
   `updated_at` timestamp NULL DEFAULT NULL,
   UNIQUE KEY `admin_role_permissions_role_id_permission_id_unique` (`role_id`,`permission_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- ----------------------------
+-- Records of admin_role_permissions
+-- ----------------------------
+BEGIN;
+INSERT INTO `admin_role_permissions` VALUES (1, 2, NULL, NULL);
+INSERT INTO `admin_role_permissions` VALUES (1, 3, NULL, NULL);
+INSERT INTO `admin_role_permissions` VALUES (1, 4, NULL, NULL);
+INSERT INTO `admin_role_permissions` VALUES (1, 5, NULL, NULL);
+INSERT INTO `admin_role_permissions` VALUES (1, 6, NULL, NULL);
+INSERT INTO `admin_role_permissions` VALUES (1, 7, NULL, NULL);
+INSERT INTO `admin_role_permissions` VALUES (1, 8, NULL, NULL);
+INSERT INTO `admin_role_permissions` VALUES (1, 9, NULL, NULL);
+INSERT INTO `admin_role_permissions` VALUES (2, 11, NULL, NULL);
+INSERT INTO `admin_role_permissions` VALUES (2, 12, NULL, NULL);
+INSERT INTO `admin_role_permissions` VALUES (2, 13, NULL, NULL);
+COMMIT;
 
 -- ----------------------------
 -- Table structure for admin_role_users
@@ -841,19 +1503,24 @@ DROP TABLE IF EXISTS `merchant_plats`;
 CREATE TABLE `merchant_plats` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `site_title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '站点名称',
+  `merchant_id` int(11) DEFAULT NULL COMMENT '商户ID',
   `plat_id` int(11) DEFAULT NULL COMMENT '平台ID',
   `extra_json` text COLLATE utf8mb4_unicode_ci COMMENT '机器人登录参数',
+  `status` int(1) unsigned DEFAULT '0' COMMENT '是否禁用',
+  `online` int(1) unsigned DEFAULT '0' COMMENT '是否在线',
   `created_at` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`) USING BTREE,
   UNIQUE KEY `setting_name_unique` (`site_title`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- ----------------------------
 -- Records of merchant_plats
 -- ----------------------------
 BEGIN;
-INSERT INTO `merchant_plats` VALUES (1, '七星彩票', NULL, NULL, '2020-05-19 23:44:21', '2020-05-19 23:44:21');
+INSERT INTO `merchant_plats` VALUES (3, '七星彩片', 2, 1, '[{\"key\":\"api_url\",\"value\":\"11\",\"desc\":\"\\u5927\\u53d1\\u63a5\\u53e3\\u5730\\u5740\"},{\"key\":\"dafa_id\",\"value\":\"222\",\"desc\":\"\\u5927\\u53d1ID\"},{\"key\":\"dafa_secret\",\"value\":\"33\",\"desc\":\"\\u5927\\u53d1\\u5bc6\\u94a5\"}]', 1, 0, '2020-05-21 03:08:57', '2020-05-21 03:08:57');
+INSERT INTO `merchant_plats` VALUES (12, '爱你', 2, 1, '[{\"key\":\"api_url\",\"value\":\"11111\",\"desc\":\"\\u5927\\u53d1\\u63a5\\u53e3\\u5730\\u5740\"},{\"key\":\"dafa_id\",\"value\":\"222111\",\"desc\":\"\\u5927\\u53d1ID\"},{\"key\":\"dafa_secret\",\"value\":\"33333\",\"desc\":\"\\u5927\\u53d1\\u5bc6\\u94a5\"}]', 0, 0, '2020-05-21 03:23:21', '2020-05-21 03:23:21');
+INSERT INTO `merchant_plats` VALUES (13, '呵呵呵', 2, 1, '[{\"key\":\"api_url\",\"value\":\"2312312313231\",\"desc\":\"\\u5927\\u53d1\\u63a5\\u53e3\\u5730\\u5740\"},{\"key\":\"dafa_id\",\"value\":\"222231213\",\"desc\":\"\\u5927\\u53d1ID\"},{\"key\":\"dafa_secret\",\"value\":\"11323123123123\",\"desc\":\"\\u5927\\u53d1\\u5bc6\\u94a5\"}]', 0, 0, '2020-05-21 03:23:11', '2020-05-21 03:23:11');
 COMMIT;
 
 -- ----------------------------
@@ -926,7 +1593,15 @@ CREATE TABLE `plats` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin MIN_ROWS=1000;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin MIN_ROWS=1000;
+
+-- ----------------------------
+-- Records of plats
+-- ----------------------------
+BEGIN;
+INSERT INTO `plats` VALUES (1, '大发', '[{\"key\":\"api_url\",\"value\":\"11\",\"desc\":\"\\u5927\\u53d1\\u63a5\\u53e3\\u5730\\u5740\"},{\"key\":\"dafa_id\",\"value\":\"222\",\"desc\":\"\\u5927\\u53d1ID\"},{\"key\":\"dafa_secret\",\"value\":\"33\",\"desc\":\"\\u5927\\u53d1\\u5bc6\\u94a5\"}]', 1, '2020-05-20 22:00:48', '2020-05-21 00:44:40');
+INSERT INTO `plats` VALUES (2, '中博', '[{\"key\":\"admin_url\",\"value\":\"11\",\"desc\":\"\\u540e\\u53f0\\u767b\\u5f55\\u57df\\u540d\"},{\"key\":\"username\",\"value\":\"22\",\"desc\":\"\\u673a\\u5668\\u4eba\\u8d26\\u6237\"},{\"key\":\"password\",\"value\":\"11\",\"desc\":\"\\u673a\\u5668\\u4eba\\u5bc6\\u7801\"}]', 1, '2020-05-20 22:01:42', '2020-05-21 00:44:51');
+COMMIT;
 
 -- ----------------------------
 -- Table structure for server_accounts
